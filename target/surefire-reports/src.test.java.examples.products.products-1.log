@@ -1,73 +1,404 @@
-17:31:29.438 karate.env system property was: null 
-17:31:29.867 request:
+14:53:31.984 karate.env system property was: null 
+14:53:32.399 request:
 1 > POST http://localhost:8080/v1/datasubject/accounts
 1 > Accept: application/json
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Content-Length: 140
+1 > Content-Length: 137
 1 > Content-Type: application/json; charset=UTF-8
 1 > Host: localhost:8080
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
-{"account_id":"6","first_name":"mrhn","middle_name":"doe","last_name":"jr","email":"ayd@xyz.com","phone_number":"12331","password":"abcdef"}
+{"account_id":2,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
 
-17:31:30.125 response time in milliseconds: 257.06
+14:53:32.512 response time in milliseconds: 111.94
 1 < 201
 1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 1 < Content-Length: 0
-1 < Date: Thu, 18 Jul 2019 08:31:30 GMT
+1 < Date: Wed, 24 Jul 2019 05:53:32 GMT
 1 < Expires: 0
-1 < Location: http://localhost:8080/v1/datasubject/accounts/6
+1 < Location: http://localhost:8080/v1/datasubject/accounts/2
 1 < Pragma: no-cache
-1 < Set-Cookie: JSESSIONID=27D0356248A6B67C599BF92EC28AB64F; Path=/v1; HttpOnly
+1 < Set-Cookie: JSESSIONID=F62E45D8A391C7224D5A4E1976ECD8E3; Path=/v1; HttpOnly
 1 < X-Content-Type-Options: nosniff
 1 < X-Frame-Options: DENY
 1 < X-XSS-Protection: 1; mode=block
 
-16:43:25.913 request:
-2 > GET http://localhost:8080/v1/datasubject/accounts/4
+14:53:32.529 [print] created id is:  
+14:53:32.533 request:
+2 > POST http://localhost:8080/v1/datasubject/accounts/2/jwt/token
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
-2 > Cookie: JSESSIONID=F12309D4794A0E8B746D66FC18B9B72C
+2 > Content-Length: 21
+2 > Content-Type: application/json; charset=UTF-8
+2 > Cookie: JSESSIONID=F62E45D8A391C7224D5A4E1976ECD8E3
 2 > Host: localhost:8080
 2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"abcdef"}
 
-16:43:25.921 response time in milliseconds: 7.24
-2 < 401
+14:53:33.140 response time in milliseconds: 607.35
+2 < 200
+2 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIyIiwicm9sZSI6IlJPTEVEQVRBU1VCSkVDVCIsImV4cCI6MTU2Mzk0OTQxMiwiaWF0IjoxNTYzOTQ3NjEyfQ.ZGjZXqbSGN0Uu6W7utUVAuCVreeR6FrFYbmpF9F_mlE
 2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-2 < Content-Length: 152
-2 < Content-Type: application/json;charset=ISO-8859-1
-2 < Date: Thu, 18 Jul 2019 07:43:25 GMT
+2 < Content-Length: 0
+2 < Date: Wed, 24 Jul 2019 05:53:32 GMT
 2 < Expires: 0
 2 < Pragma: no-cache
 2 < X-Content-Type-Options: nosniff
 2 < X-Frame-Options: DENY
 2 < X-XSS-Protection: 1; mode=block
-{"name":"No credentials provided","message":"Full authentication is required to access this resource","debug_id":"f457e6c2-e99a-402c-a9bf-dfb699db2ae8"}
 
-16:43:25.922 status code was: 401, expected: 200, response time: 7, url: http://localhost:8080/v1/datasubject/accounts/4, response: {"name":"No credentials provided","message":"Full authentication is required to access this resource","debug_id":"f457e6c2-e99a-402c-a9bf-dfb699db2ae8"}
-a1-c76b33bf85b1"}
-,"url":"http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&skuId=48530&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":127687,"name":"Duracell - AA Batteries (8-Pack)","type":"HardGood","price":7.49,"upc":"041333825014","shipping":0,"description":"Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack","manufacturer":"Duracell","model":"MN1500B8Z","url":"http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&skuId=127687&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":150115,"name":"Energizer - MAX Batteries AA (4-Pack)","type":"HardGood","price":4.99,"upc":"039800011329","shipping":0,"description":"4-pack AA alkaline batteries; battery tester included","manufacturer":"Energizer","model":"E91BP-4","url":"http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&skuId=150115&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":185230,"name":"Duracell - C Batteries (4-Pack)","type":"HardGood","price":8.99,"upc":"041333440019","shipping":0,"description":"Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN1400R4Z","url":"http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&skuId=185230&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":185267,"name":"Duracell - D Batteries (4-Pack)","type":"HardGood","price":9.99,"upc":"041333430010","shipping":0,"description":"Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN1300R4Z","url":"http://www.bestbuy.com/site/duracell-d-batteries-4-pack/185267.p?id=1051384046551&skuId=185267&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1852/185267_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":309062,"name":"Pioneer - 4\" 3-Way Surface-Mount Speakers with IMPP Composite Cones (Pair) - Black","type":"HardGood","price":144.99,"upc":"012562165141","shipping":0,"description":"80W maximum power (20W RMS); 4\" IMPP composite cone woofer; 3/4\" horn tweeter","manufacturer":"Pioneer","model":"TS-X200","url":"http://www.bestbuy.com/site/pioneer-4-3-way-surface-mount-speakers-with-impp-composite-cones-pair-black/309062.p?id=1218643240258&skuId=309062&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/0309/0309062_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0300000","name":"Car Electronics & GPS","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"abcat0302000","name":"Car Audio","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"abcat0302005","name":"Car Speakers","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat360500050015","name":"4\" Car Speakers","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"}]},{"id":312290,"name":"Duracell - 9V Batteries (2-Pack)","type":"HardGood","price":7.99,"upc":"041333216010","shipping":0,"description":"Compatible with select electronic devices; alkaline chemistry; 9V size; DURALOCK Power Preserve technology; 2-pack","manufacturer":"Duracell","model":"MN1604B2Z","url":"http://www.bestbuy.com/site/duracell-9v-batteries-2-pack/312290.p?id=1051384050321&skuId=312290&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/3122/312290_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":333179,"name":"Energizer - N Cell E90 Batteries (2-Pack)","type":"HardGood","price":5.99,"upc":"039800013200","shipping":0,"description":"Alkaline batteries; 1.5V","manufacturer":"Energizer","model":"E90BP-2","url":"http://www.bestbuy.com/site/energizer-n-cell-e90-batteries-2-pack/333179.p?id=1185268509951&skuId=333179&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/3331/333179_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208006","name":"Specialty Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":346575,"name":"Metra - Radio Installation Dash Kit for Most 1989-2000 Ford, Lincoln & Mercury Vehicles - Black","type":"HardGood","price":16.99,"upc":"086429002757","shipping":0,"description":"From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket","manufacturer":"Metra","model":"99-5512","url":"http://www.bestbuy.com/site/metra-radio-installation-dash-kit-for-most-1989-2000-ford-lincoln-mercury-vehicles-black/346575.p?id=1218118704590&skuId=346575&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/3465/346575_rc.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0300000","name":"Car Electronics & GPS","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat165900050023","name":"Car Installation Parts & Accessories","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat165900050031","name":"Deck Installation Parts","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat165900050033","name":"Dash Installation Kits","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat331600050007","name":"Car Audio Installation Parts","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"}]}]}
+ns-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
 
-18:05:42.596 request:
-2 > GET http://localhost:3030/Products/43900
-2 > Accept-Encoding: gzip,deflate
-2 > Connection: Keep-Alive
-2 > Host: localhost:3030
-2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+18:19:24.860 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+18:19:24.860 status code was: 404, expected: 200, response time: 107, url: http://localhost:8080/v1/id/jwt/token, response: <!doctype html><html lang="en"><head><title>HTTP Status 404 – Not Found</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Status Report</p><p><b>Description</b> The origin server did not find a current representation for the target resource or is not willing to disclose that one exists.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+ork.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:44)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>java.lang.NullPointerException
+	java.util.Objects.requireNonNull(Objects.java:203)
+	java.util.Optional.&lt;init&gt;(Optional.java:96)
+	java.util.Optional.of(Optional.java:108)
+	com.scalar.information_bank.api.security.AuthenticationValidationService.validatePassword(AuthenticationValidationService.java:51)
+	com.scalar.information_bank.api.security.JwtTokenService.generateToken(JwtTokenService.java:170)
+	com.scalar.information_bank.api.security.controller.JwtAuthenticationRestController.createDataSubjectJwtToken(JwtAuthenticationRestController.java:52)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:44)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
 
-18:05:42.601 response time in milliseconds: 3.96
-2 < 200
-2 < Access-Control-Allow-Origin: *
-2 < Allow: GET,POST,PUT,PATCH,DELETE
-2 < Connection: keep-alive
-2 < Content-Type: application/json; charset=utf-8
-2 < Date: Wed, 17 Jul 2019 09:05:42 GMT
-2 < ETag: W/"448-HK+7FOWwXWiupzaUDo7jVkmRXqo"
-2 < Transfer-Encoding: chunked
-2 < Vary: Accept, Accept-Encoding
-2 < X-Powered-By: Express
-{"id":43900,"name":"Duracell - AAA Batteries (4-Pack)","type":"HardGood","price":5.49,"upc":"041333424019","shipping":0,"description":"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN2400B4Z","url":"http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]}
-
-
-
-image":"http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":127687,"name":"Duracell - AA Batteries (8-Pack)","type":"HardGood","price":7.49,"upc":"041333825014","shipping":0,"description":"Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack","manufacturer":"Duracell","model":"MN1500B8Z","url":"http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&skuId=127687&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":150115,"name":"Energizer - MAX Batteries AA (4-Pack)","type":"HardGood","price":4.99,"upc":"039800011329","shipping":0,"description":"4-pack AA alkaline batteries; battery tester included","manufacturer":"Energizer","model":"E91BP-4","url":"http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&skuId=150115&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":185230,"name":"Duracell - C Batteries (4-Pack)","type":"HardGood","price":8.99,"upc":"041333440019","shipping":0,"description":"Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN1400R4Z","url":"http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&skuId=185230&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":185267,"name":"Duracell - D Batteries (4-Pack)","type":"HardGood","price":9.99,"upc":"041333430010","shipping":0,"description":"Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN1300R4Z","url":"http://www.bestbuy.com/site/duracell-d-batteries-4-pack/185267.p?id=1051384046551&skuId=185267&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1852/185267_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":309062,"name":"Pioneer - 4\" 3-Way Surface-Mount Speakers with IMPP Composite Cones (Pair) - Black","type":"HardGood","price":144.99,"upc":"012562165141","shipping":0,"description":"80W maximum power (20W RMS); 4\" IMPP composite cone woofer; 3/4\" horn tweeter","manufacturer":"Pioneer","model":"TS-X200","url":"http://www.bestbuy.com/site/pioneer-4-3-way-surface-mount-speakers-with-impp-composite-cones-pair-black/309062.p?id=1218643240258&skuId=309062&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/0309/0309062_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0300000","name":"Car Electronics & GPS","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"abcat0302000","name":"Car Audio","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"abcat0302005","name":"Car Speakers","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat360500050015","name":"4\" Car Speakers","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"}]},{"id":312290,"name":"Duracell - 9V Batteries (2-Pack)","type":"HardGood","price":7.99,"upc":"041333216010","shipping":0,"description":"Compatible with select electronic devices; alkaline chemistry; 9V size; DURALOCK Power Preserve technology; 2-pack","manufacturer":"Duracell","model":"MN1604B2Z","url":"http://www.bestbuy.com/site/duracell-9v-batteries-2-pack/312290.p?id=1051384050321&skuId=312290&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/3122/312290_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":333179,"name":"Energizer - N Cell E90 Batteries (2-Pack)","type":"HardGood","price":5.99,"upc":"039800013200","shipping":0,"description":"Alkaline batteries; 1.5V","manufacturer":"Energizer","model":"E90BP-2","url":"http://www.bestbuy.com/site/energizer-n-cell-e90-batteries-2-pack/333179.p?id=1185268509951&skuId=333179&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/3331/333179_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208006","name":"Specialty Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":346575,"name":"Metra - Radio Installation Dash Kit for Most 1989-2000 Ford, Lincoln & Mercury Vehicles - Black","type":"HardGood","price":16.99,"upc":"086429002757","shipping":0,"description":"From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket","manufacturer":"Metra","model":"99-5512","url":"http://www.bestbuy.com/site/metra-radio-installation-dash-kit-for-most-1989-2000-ford-lincoln-mercury-vehicles-black/346575.p?id=1218118704590&skuId=346575&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/3465/346575_rc.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0300000","name":"Car Electronics & GPS","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat165900050023","name":"Car Installation Parts & Accessories","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat165900050031","name":"Deck Installation Parts","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat165900050033","name":"Dash Installation Kits","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat331600050007","name":"Car Audio Installation Parts","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"}]}]}
+18:16:52.253 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+18:16:52.256 status code was: 500, expected: 200, response time: 42, url: http://localhost:8080/v1/datasubject/accounts/%7B%7Bacc_id%7D%7D/jwt/token, response: <!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Request processing failed; nested exception is java.lang.NullPointerException</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1013)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:44)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>java.lang.NullPointerException
+	java.util.Objects.requireNonNull(Objects.java:203)
+	java.util.Optional.&lt;init&gt;(Optional.java:96)
+	java.util.Optional.of(Optional.java:108)
+	com.scalar.information_bank.api.security.AuthenticationValidationService.validatePassword(AuthenticationValidationService.java:51)
+	com.scalar.information_bank.api.security.JwtTokenService.generateToken(JwtTokenService.java:170)
+	com.scalar.information_bank.api.security.controller.JwtAuthenticationRestController.createDataSubjectJwtToken(JwtAuthenticationRestController.java:52)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:44)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+Method.java:104)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:44)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>java.net.URISyntaxException: Illegal character in path at index 46: http:&#47;&#47;localhost:8080&#47;v1&#47;datasubject&#47;accounts&#47;{acc_id}
+	java.net.URI$Parser.fail(URI.java:2848)
+	java.net.URI$Parser.checkChars(URI.java:3021)
+	java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	java.net.URI$Parser.parse(URI.java:3053)
+	java.net.URI.&lt;init&gt;(URI.java:588)
+	java.net.URI.create(URI.java:850)
+	com.scalar.information_bank.api.controller.DataSubjectAccountController.createDataSubjectAccount(DataSubjectAccountController.java:38)
+	sun.reflect.GeneratedMethodAccessor173.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:44)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>

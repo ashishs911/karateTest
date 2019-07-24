@@ -168,55 +168,97 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">getting the list of products</span>
+<span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">getting the list of products</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url 'http://localhost:8080/v1/'</div>
-<div class="time-cell passed">0.00207</div>
+<div class="time-cell passed">0.001884</div>
 </div>
-<div class="preformatted">13:51:14.155 karate.env system property was: null</div>
+<div class="preformatted">17:07:31.578 karate.env system property was: null</div>
 <div class="step-row">
 <div class="step-cell passed">* header Accept = 'application/json'</div>
-<div class="time-cell passed">0.001572</div>
+<div class="time-cell passed">0.001469</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* def acc_id = 12</div>
+<div class="time-cell passed">0.00209</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given path 'datasubject/accounts'</div>
-<div class="time-cell passed">0.00156</div>
+<div class="time-cell passed">0.001426</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">And request {"account_id": "8", "first_name": "mfn", "middle_name": "doe", "last_name": "jr", "email": "aed@xyz.com", "phone_number": "12331", "password": "abcdef"}</div>
-<div class="time-cell passed">0.000158</div>
+<div class="step-cell passed">And request {"account_id": "13", "first_name": "mfn", "middle_name": "doe", "last_name": "jr", "email": "aed@xyz.com", "phone_number": "12331", "password": "abcdef"}</div>
+<div class="time-cell passed">0.000146</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method POST</div>
-<div class="time-cell passed">0.569501</div>
+<div class="time-cell passed">0.564223</div>
 </div>
-<div class="preformatted">13:51:14.539 request:
+<div class="preformatted">17:07:32.005 request:
 1 &gt; POST http://localhost:8080/v1/datasubject/accounts
 1 &gt; Accept: application/json
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 139
+1 &gt; Content-Length: 140
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: localhost:8080
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
-{"account_id":"8","first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+{"account_id":"13","first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
 
-13:51:14.829 response time in milliseconds: 287.68
+17:07:32.214 response time in milliseconds: 207.63
 1 &lt; 201
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 1 &lt; Content-Length: 0
-1 &lt; Date: Fri, 19 Jul 2019 04:51:14 GMT
+1 &lt; Date: Fri, 19 Jul 2019 08:07:32 GMT
 1 &lt; Expires: 0
-1 &lt; Location: http://localhost:8080/v1/datasubject/accounts/8
+1 &lt; Location: http://localhost:8080/v1/datasubject/accounts/13
 1 &lt; Pragma: no-cache
-1 &lt; Set-Cookie: JSESSIONID=C7BF9693C92E5F85C92C79AD38174CAB; Path=/v1; HttpOnly
+1 &lt; Set-Cookie: JSESSIONID=753FDCC31DC6A6C874675F72EFFB73D6; Path=/v1; HttpOnly
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-Frame-Options: DENY
 1 &lt; X-XSS-Protection: 1; mode=block</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 201</div>
-<div class="time-cell passed">0.000017</div>
+<div class="time-cell passed">0.000041</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">Given path '/datasubject/accounts/13/jwt/token'</div>
+<div class="time-cell passed">0.007202</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And request {"password": "abcdef"}</div>
+<div class="time-cell passed">0.000201</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method POST</div>
+<div class="time-cell passed">0.103169</div>
+</div>
+<div class="preformatted">17:07:32.226 request:
+2 &gt; POST http://localhost:8080/v1/datasubject/accounts/13/jwt/token
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Length: 21
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Cookie: JSESSIONID=753FDCC31DC6A6C874675F72EFFB73D6
+2 &gt; Host: localhost:8080
+2 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"abcdef"}
+
+17:07:32.327 response time in milliseconds: 98.00
+2 &lt; 200
+2 &lt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMyIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjM1MjU0NTIsImlhdCI6MTU2MzUyMzY1Mn0.DKResEIGwMmupXBLddFpZQF3WZYZc3ILwbGTGph3kYc
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Content-Length: 0
+2 &lt; Date: Fri, 19 Jul 2019 08:07:32 GMT
+2 &lt; Expires: 0
+2 &lt; Pragma: no-cache
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Frame-Options: DENY
+2 &lt; X-XSS-Protection: 1; mode=block</div>
+<div class="step-row">
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.000012</div>
 </div>
 </div>
 </div>

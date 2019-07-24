@@ -2,7 +2,7 @@ package examples.products;
 
 import com.intuit.karate.junit5.Karate;
 
-public class ProductsRunner {
+public class DataSubjectRunner {
 
     @Karate.Test
     Karate testUsers() {

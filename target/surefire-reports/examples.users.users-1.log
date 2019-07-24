@@ -1,27 +1,27 @@
-13:51:15.000 karate.env system property was: null 
-13:51:15.005 request:
+17:07:32.441 karate.env system property was: null 
+17:07:32.463 request:
 1 > GET https://jsonplaceholder.typicode.com/users
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: jsonplaceholder.typicode.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
 
-13:51:15.580 response time in milliseconds: 572.22
+17:07:32.881 response time in milliseconds: 415.78
 1 < 200
 1 < Access-Control-Allow-Credentials: true
-1 < Age: 3310
+1 < Age: 1350
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 4f8a14500f50d936-HKG
+1 < CF-RAY: 4f8b33d5f8cc2e43-NRT
 1 < Cache-Control: public, max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Fri, 19 Jul 2019 04:51:17 GMT
+1 < Date: Fri, 19 Jul 2019 08:07:34 GMT
 1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Expires: Fri, 19 Jul 2019 08:51:17 GMT
+1 < Expires: Fri, 19 Jul 2019 12:07:34 GMT
 1 < Pragma: no-cache
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=dac67f98efd85fb94302ff70e33208c3f1563511877; expires=Sat, 18-Jul-20 04:51:17 GMT; path=/; domain=.typicode.com; HttpOnly
+1 < Set-Cookie: __cfduid=d16ff13ecb091714ed491cf04d80370401563523654; expires=Sat, 18-Jul-20 08:07:34 GMT; path=/; domain=.typicode.com; HttpOnly
 1 < Transfer-Encoding: chunked
 1 < Vary: Origin, Accept-Encoding
 1 < Via: 1.1 vegur
@@ -260,27 +260,27 @@
   }
 ]
 
-13:51:15.611 request:
+17:07:32.908 request:
 2 > GET https://jsonplaceholder.typicode.com/users/1
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
-2 > Cookie: __cfduid=dac67f98efd85fb94302ff70e33208c3f1563511877
+2 > Cookie: __cfduid=d16ff13ecb091714ed491cf04d80370401563523654
 2 > Host: jsonplaceholder.typicode.com
 2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
 
-13:51:15.799 response time in milliseconds: 187.06
+17:07:32.944 response time in milliseconds: 34.40
 2 < 200
 2 < Access-Control-Allow-Credentials: true
-2 < Age: 5029
+2 < Age: 6154
 2 < CF-Cache-Status: HIT
-2 < CF-RAY: 4f8a14518d5bd19f-HKG
+2 < CF-RAY: 4f8b33d668eb6ebb-NRT
 2 < Cache-Control: public, max-age=14400
 2 < Connection: keep-alive
 2 < Content-Type: application/json; charset=utf-8
-2 < Date: Fri, 19 Jul 2019 04:51:17 GMT
+2 < Date: Fri, 19 Jul 2019 08:07:34 GMT
 2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
 2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-2 < Expires: Fri, 19 Jul 2019 08:51:17 GMT
+2 < Expires: Fri, 19 Jul 2019 12:07:34 GMT
 2 < Pragma: no-cache
 2 < Server: cloudflare
 2 < Transfer-Encoding: chunked
@@ -311,4 +311,5 @@
     "bs": "harness real-time e-markets"
   }
 }
+
 
