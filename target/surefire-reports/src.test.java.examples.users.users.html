@@ -172,40 +172,40 @@
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div>
-<div class="time-cell passed">0.002211</div>
+<div class="time-cell passed">0.001877</div>
 </div>
-<div class="preformatted">17:31:40.665 karate.env system property was: null</div>
+<div class="preformatted">17:27:02.294 karate.env system property was: null</div>
 <div class="step-row">
 <div class="step-cell passed">Given path 'users'</div>
-<div class="time-cell passed">0.001424</div>
+<div class="time-cell passed">0.001634</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.850972</div>
+<div class="time-cell passed">0.803976</div>
 </div>
-<div class="preformatted">17:31:41.043 request:
+<div class="preformatted">17:27:02.694 request:
 1 &gt; GET https://jsonplaceholder.typicode.com/users
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: jsonplaceholder.typicode.com
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
 
-17:31:41.559 response time in milliseconds: 508.71
+17:27:03.160 response time in milliseconds: 462.50
 1 &lt; 200
 1 &lt; Access-Control-Allow-Credentials: true
-1 &lt; Age: 1587
+1 &lt; Age: 242
 1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 4f8319d21da9cbe4-SIN
+1 &lt; CF-RAY: 4fb4834e6d70a9f4-SIN
 1 &lt; Cache-Control: public, max-age=14400
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 18 Jul 2019 08:31:42 GMT
+1 &lt; Date: Wed, 24 Jul 2019 08:27:05 GMT
 1 &lt; Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Expires: Thu, 18 Jul 2019 12:31:42 GMT
+1 &lt; Expires: Wed, 24 Jul 2019 12:27:05 GMT
 1 &lt; Pragma: no-cache
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=dde859cd2dcf4fb892dd7e147a4cf43cd1563438702; expires=Fri, 17-Jul-20 08:31:42 GMT; path=/; domain=.typicode.com; HttpOnly
+1 &lt; Set-Cookie: __cfduid=d80d265ac2b9a0fbb8c97fb68be0e67641563956825; expires=Thu, 23-Jul-20 08:27:05 GMT; path=/; domain=.typicode.com; HttpOnly
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Origin, Accept-Encoding
 1 &lt; Via: 1.1 vegur
@@ -445,41 +445,41 @@
 ]</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000018</div>
+<div class="time-cell passed">0.000017</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def first = response[0]</div>
-<div class="time-cell passed">0.018645</div>
+<div class="time-cell passed">0.02223</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">Given path 'users', first.id</div>
-<div class="time-cell passed">0.005678</div>
+<div class="time-cell passed">0.005647</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.247829</div>
+<div class="time-cell passed">0.235796</div>
 </div>
-<div class="preformatted">17:31:41.588 request:
+<div class="preformatted">17:27:03.192 request:
 2 &gt; GET https://jsonplaceholder.typicode.com/users/1
 2 &gt; Accept-Encoding: gzip,deflate
 2 &gt; Connection: Keep-Alive
-2 &gt; Cookie: __cfduid=dde859cd2dcf4fb892dd7e147a4cf43cd1563438702
+2 &gt; Cookie: __cfduid=d80d265ac2b9a0fbb8c97fb68be0e67641563956825
 2 &gt; Host: jsonplaceholder.typicode.com
 2 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
 
-17:31:41.834 response time in milliseconds: 243.38
+17:27:03.424 response time in milliseconds: 229.74
 2 &lt; 200
 2 &lt; Access-Control-Allow-Credentials: true
-2 &lt; Age: 1517
+2 &lt; Age: 300
 2 &lt; CF-Cache-Status: HIT
-2 &lt; CF-RAY: 4f8319d3eb7ac322-SIN
+2 &lt; CF-RAY: 4fb483502c4fdd7f-SIN
 2 &lt; Cache-Control: public, max-age=14400
 2 &lt; Connection: keep-alive
 2 &lt; Content-Type: application/json; charset=utf-8
-2 &lt; Date: Thu, 18 Jul 2019 08:31:42 GMT
+2 &lt; Date: Wed, 24 Jul 2019 08:27:05 GMT
 2 &lt; Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
 2 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-2 &lt; Expires: Thu, 18 Jul 2019 12:31:42 GMT
+2 &lt; Expires: Wed, 24 Jul 2019 12:27:05 GMT
 2 &lt; Pragma: no-cache
 2 &lt; Server: cloudflare
 2 &lt; Transfer-Encoding: chunked
@@ -512,7 +512,7 @@
 }</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000035</div>
+<div class="time-cell passed">0.00002</div>
 </div>
 </div>
 <div class="scenario">
@@ -521,12 +521,12 @@
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div>
-<div class="time-cell passed">0.000351</div>
+<div class="time-cell passed">0.000439</div>
 </div>
-<div class="preformatted">17:31:41.869 karate.env system property was: null</div>
+<div class="preformatted">17:27:03.464 karate.env system property was: null</div>
 <div class="step-row">
 <div class="step-cell passed">* def user =</div>
-<div class="time-cell passed">0.000457</div>
+<div class="time-cell passed">0.000307</div>
 </div>
 <div class="preformatted">{
   "name": "Test User",
@@ -541,17 +541,17 @@
 }</div>
 <div class="step-row">
 <div class="step-cell passed">Given url 'https://jsonplaceholder.typicode.com/users'</div>
-<div class="time-cell passed">0.005149</div>
+<div class="time-cell passed">0.002836</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">And request user</div>
-<div class="time-cell passed">0.000163</div>
+<div class="time-cell passed">0.000077</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">When method post</div>
-<div class="time-cell passed">2.275146</div>
+<div class="time-cell passed">0.863359</div>
 </div>
-<div class="preformatted">17:31:41.887 request:
+<div class="preformatted">17:27:03.482 request:
 1 &gt; POST https://jsonplaceholder.typicode.com/users
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -561,23 +561,23 @@
 1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
 {"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
 
-17:31:44.153 response time in milliseconds: 2266.06
+17:27:04.334 response time in milliseconds: 846.74
 1 &lt; 201
 1 &lt; Access-Control-Allow-Credentials: true
 1 &lt; Access-Control-Expose-Headers: Location
-1 &lt; CF-RAY: 4f8319d60c47cbe0-SIN
+1 &lt; CF-RAY: 4fb483521880c363-SIN
 1 &lt; Cache-Control: no-cache
 1 &lt; Connection: keep-alive
 1 &lt; Content-Length: 216
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Thu, 18 Jul 2019 08:31:44 GMT
+1 &lt; Date: Wed, 24 Jul 2019 08:27:06 GMT
 1 &lt; Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; Expires: -1
 1 &lt; Location: http://jsonplaceholder.typicode.com/users/11
 1 &lt; Pragma: no-cache
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d4188c203ac1d8a507d47aa918be807df1563438703; expires=Fri, 17-Jul-20 08:31:43 GMT; path=/; domain=.typicode.com; HttpOnly
+1 &lt; Set-Cookie: __cfduid=d2a126fb7aa4c4e8f73a3130971ac12581563956825; expires=Thu, 23-Jul-20 08:27:05 GMT; path=/; domain=.typicode.com; HttpOnly
 1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 1 &lt; Via: 1.1 vegur
 1 &lt; X-Content-Type-Options: nosniff
@@ -596,20 +596,20 @@
 }</div>
 <div class="step-row">
 <div class="step-cell passed">Then status 201</div>
-<div class="time-cell passed">0.000011</div>
+<div class="time-cell passed">0.000014</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* def id = response.id</div>
-<div class="time-cell passed">0.003027</div>
+<div class="time-cell passed">0.003406</div>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* print 'created id is: ', id</div>
-<div class="time-cell passed">0.00507</div>
+<div class="time-cell passed">0.004038</div>
 </div>
-<div class="preformatted">17:31:44.162 [print] created id is:  11</div>
+<div class="preformatted">17:27:04.343 [print] created id is:  11</div>
 <div class="step-row">
 <div class="step-cell passed">Given path id</div>
-<div class="time-cell passed">0.000015</div>
+<div class="time-cell passed">0.000016</div>
 </div>
 </div>
 </div>

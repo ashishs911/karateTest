@@ -2,7 +2,7 @@ Feature: an example test based on datasubject account
 
   Background:
     * url 'http://localhost:8080/v1/'
-    * def acc_id = 41
+    * def acc_id = 42
 
     Scenario: Creating a data subject account
       Given path 'datasubject/accounts'
