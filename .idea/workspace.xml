@@ -4,7 +4,6 @@
     <list default="true" id="8ca4dd0b-1ac4-4a20-8d03-c49d2545cf8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/examples/dataSubject/dataSubject.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/examples/dataSubject/dataSubject.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -387,7 +386,21 @@
       <option name="project" value="LOCAL" />
       <updated>1563960308970</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="removed the demo files and addes negative scenarios">
+      <created>1564031495028</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564031495028</updated>
+    </task>
+    <task id="LOCAL-00004" summary="removed the demo files and addes negative scenarios">
+      <created>1564031959573</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564031959573</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -483,8 +496,10 @@
     </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="added new login scenario along with verifying account details using GET method" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new login scenario along with verifying account details using GET method" />
+    <MESSAGE value="removed the demo files and addes negative scenarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed the demo files and addes negative scenarios" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/target/test-classes/examples/products/products.feature">
