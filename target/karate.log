@@ -11473,3 +11473,1527 @@ user
 1 < X-XSS-Protection: 1; mode=block
 {"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (51) already exist","debug_id":"018969c0-f961-4323-965b-9d580ad9c404"}
 
+16:41:55.230 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+  } else if (env == 'e2e') {
+    config.Baseurl : '13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:41:55.276 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+  } else if (env == 'e2e') {
+    config.Baseurl : '13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:41:55.286 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+  } else if (env == 'e2e') {
+    config.Baseurl : '13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:41:55.292 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+  } else if (env == 'e2e') {
+    config.Baseurl : '13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:44:37.836 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+
+  } else if (env == 'e2e') {
+    config.Baseurl : '13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:44:37.871 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+
+  } else if (env == 'e2e') {
+    config.Baseurl : '13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:44:37.878 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+
+  } else if (env == 'e2e') {
+    config.Baseurl : '13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:44:37.889 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+
+  } else if (env == 'e2e') {
+    config.Baseurl : '13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:46:06.854 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+
+  } else if (env == 'e2e') {
+    config.Baseurl : '13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:46:06.903 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+
+  } else if (env == 'e2e') {
+    config.Baseurl : '13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:46:06.913 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+
+  } else if (env == 'e2e') {
+    config.Baseurl : '13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:46:06.924 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+
+  } else if (env == 'e2e') {
+    config.Baseurl : '13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:48:07.888 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+
+  } else if (env == 'e2e') {
+    config.Baseurl : 'http://13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:48:07.933 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+
+  } else if (env == 'e2e') {
+    config.Baseurl : 'http://13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:48:07.947 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+
+  } else if (env == 'e2e') {
+    config.Baseurl : 'http://13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:48:07.962 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl : 'http://localhost:8080/v1/'
+
+  } else if (env == 'e2e') {
+    config.Baseurl : 'http://13.78.33.186:8080/v1'
+  }
+  return config;
+}, <eval>:13:19 Expected ; but found :
+    config.Baseurl : 'http://localhost:8080/v1/'
+                   ^ in <eval> at line number 13 at column number 19
+16:49:55.096 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl: 'http://localhost:8080/v1/';
+
+  } else if (env == 'e2e') {
+    config.Baseurl: 'http://13.78.33.186:8080/v1';
+  }
+  return config;
+}, <eval>:13:18 Expected ; but found :
+    config.Baseurl: 'http://localhost:8080/v1/';
+                  ^ in <eval> at line number 13 at column number 18
+16:49:55.141 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl: 'http://localhost:8080/v1/';
+
+  } else if (env == 'e2e') {
+    config.Baseurl: 'http://13.78.33.186:8080/v1';
+  }
+  return config;
+}, <eval>:13:18 Expected ; but found :
+    config.Baseurl: 'http://localhost:8080/v1/';
+                  ^ in <eval> at line number 13 at column number 18
+16:49:55.150 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl: 'http://localhost:8080/v1/';
+
+  } else if (env == 'e2e') {
+    config.Baseurl: 'http://13.78.33.186:8080/v1';
+  }
+  return config;
+}, <eval>:13:18 Expected ; but found :
+    config.Baseurl: 'http://localhost:8080/v1/';
+                  ^ in <eval> at line number 13 at column number 18
+16:49:55.190 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript evaluation failed: read('classpath:karate-config.js'), javascript evaluation failed: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	Baseurl : 'http://localhost:8080/v1/',
+
+  };
+  if (env == 'dev') {
+    config.Baseurl: 'http://localhost:8080/v1/';
+
+  } else if (env == 'e2e') {
+    config.Baseurl: 'http://13.78.33.186:8080/v1';
+  }
+  return config;
+}, <eval>:13:18 Expected ; but found :
+    config.Baseurl: 'http://localhost:8080/v1/';
+                  ^ in <eval> at line number 13 at column number 18
+16:58:41.872 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+16:58:42.313 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0NCIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwMjQxMzcsImlhdCI6MTU2NDAyMjMzN30.ZsQJXjFm1SFXkXdsy2JE35nlL94ArbH1yz3VltS6ntk
+1 > Connection: Keep-Alive
+1 > Content-Length: 122
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"last_name":"jr","middle_name":"doe","first_name":"mfn","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+16:58:42.435 [main] DEBUG com.intuit.karate - response time in milliseconds: 113.50
+1 < 500
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: close
+1 < Content-Language: en
+1 < Content-Length: 7946
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Thu, 25 Jul 2019 07:58:42 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=90212F3D310D5FE07C71F4C7DA7401C0; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+<!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Error validating the jwt token</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>com.scalar.information_bank.api.security.AuthenticationException: Error validating the jwt token
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:82)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-25T12:08:57Z. Current time: 2019-07-25T16:58:42Z, a difference of 17385390 milliseconds.  Allowed clock skew: 0 milliseconds.
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	com.scalar.information_bank.api.security.JwtTokenService.getAllClaimsFromToken(JwtTokenService.java:157)
+	com.scalar.information_bank.api.security.JwtTokenService.getClaimFromToken(JwtTokenService.java:151)
+	com.scalar.information_bank.api.security.JwtTokenService.getSubjectIdFromToken(JwtTokenService.java:132)
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:77)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+
+16:58:42.569 [main] WARN  com.intuit.karate - xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+16:58:42.574 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 113, url: http://localhost:8080/v1/admin/accounts, response: <!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Error validating the jwt token</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>com.scalar.information_bank.api.security.AuthenticationException: Error validating the jwt token
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:82)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-25T12:08:57Z. Current time: 2019-07-25T16:58:42Z, a difference of 17385390 milliseconds.  Allowed clock skew: 0 milliseconds.
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	com.scalar.information_bank.api.security.JwtTokenService.getAllClaimsFromToken(JwtTokenService.java:157)
+	com.scalar.information_bank.api.security.JwtTokenService.getClaimFromToken(JwtTokenService.java:151)
+	com.scalar.information_bank.api.security.JwtTokenService.getSubjectIdFromToken(JwtTokenService.java:132)
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:77)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+16:58:42.662 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+16:58:42.682 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+16:58:42.704 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+16:58:42.713 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+17:01:24.293 [main] ERROR com.intuit.karate.core.FeatureParser - syntax error: mismatched input '<EOF>' expecting {FEATURE_TAGS, FEATURE}
+17:01:24.297 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: classpath:examples/thirdParties/thirdParty.feature - mismatched input '<EOF>' expecting {FEATURE_TAGS, FEATURE}
+17:02:48.706 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+17:02:49.088 [main] DEBUG com.intuit.karate - request:
+1 > POST http://13.78.33.186:8080/v1/datasubject/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"account_id":54,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+17:02:49.370 [main] DEBUG com.intuit.karate - response time in milliseconds: 278.83
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Thu, 25 Jul 2019 08:02:50 GMT
+1 < Expires: 0
+1 < Location: http://13.78.33.186:8080/v1/datasubject/accounts/54
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=0727EDB2EC30341DD35FD0556696009D; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+17:02:49.384 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+17:02:49.388 [main] DEBUG com.intuit.karate - request:
+1 > POST http://13.78.33.186:8080/v1/datasubject/accounts/54/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 21
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"abcdef"}
+
+17:02:49.495 [main] DEBUG com.intuit.karate - response time in milliseconds: 105.99
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NCIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDM1NzAsImlhdCI6MTU2NDA0MTc3MH0.g8vs93SrJDOVBafm302BV9vU-lw9aCvCX_06KFrKraQ
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Thu, 25 Jul 2019 08:02:50 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=3EC15982ABB96D7B94523CF04B5156F6; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+17:02:49.510 [main] INFO  com.intuit.karate - [print] authorization key is  [
+  "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NCIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDM1NzAsImlhdCI6MTU2NDA0MTc3MH0.g8vs93SrJDOVBafm302BV9vU-lw9aCvCX_06KFrKraQ"
+]
+
+17:02:49.516 [main] DEBUG com.intuit.karate - request:
+2 > GET http://13.78.33.186:8080/v1/datasubject/accounts/54
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NCIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDM1NzAsImlhdCI6MTU2NDA0MTc3MH0.g8vs93SrJDOVBafm302BV9vU-lw9aCvCX_06KFrKraQ
+2 > Connection: Keep-Alive
+2 > Cookie: JSESSIONID=3EC15982ABB96D7B94523CF04B5156F6
+2 > Host: 13.78.33.186:8080
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:02:49.534 [main] DEBUG com.intuit.karate - response time in milliseconds: 15.89
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Thu, 25 Jul 2019 08:02:50 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Set-Cookie: JSESSIONID=1724D127C1C74D74D05D8053D5D4D0EB; Path=/v1; HttpOnly
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"data_subject_id":"54","first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","identification_id":null,"registered_at":"2019-07-25T08:02:50.152Z","last_updated_at":null}
+
+17:02:49.541 [main] DEBUG com.intuit.karate - request:
+3 > GET http://13.78.33.186:8080/v1/datasubject/accounts/54/processingrequests
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NCIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDM1NzAsImlhdCI6MTU2NDA0MTc3MH0.g8vs93SrJDOVBafm302BV9vU-lw9aCvCX_06KFrKraQ
+3 > Connection: Keep-Alive
+3 > Cookie: JSESSIONID=1724D127C1C74D74D05D8053D5D4D0EB
+3 > Host: 13.78.33.186:8080
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:02:49.651 [main] DEBUG com.intuit.karate - response time in milliseconds: 108.87
+3 < 200
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Content-Type: application/json;charset=UTF-8
+3 < Date: Thu, 25 Jul 2019 08:02:50 GMT
+3 < Expires: 0
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+[]
+
+17:02:49.659 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+17:02:49.664 [main] DEBUG com.intuit.karate - request:
+1 > GET http://13.78.33.186:8080/v1/datasubject/accounts/54
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:02:49.680 [main] DEBUG com.intuit.karate - response time in milliseconds: 13.82
+1 < 401
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 152
+1 < Content-Type: application/json;charset=ISO-8859-1
+1 < Date: Thu, 25 Jul 2019 08:02:50 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=CCE8CEE6CC81CD426EAF1D245AE5EF20; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"No credentials provided","message":"Full authentication is required to access this resource","debug_id":"b6c64813-7944-4c1a-b233-a618c6251563"}
+
+17:02:49.693 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+17:02:49.711 [main] DEBUG com.intuit.karate - request:
+1 > POST http://13.78.33.186:8080/v1/datasubject/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"account_id":53,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+17:02:49.818 [main] DEBUG com.intuit.karate - response time in milliseconds: 104.40
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Thu, 25 Jul 2019 08:02:50 GMT
+1 < Expires: 0
+1 < Location: http://13.78.33.186:8080/v1/datasubject/accounts/53
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=A93986C3A0A32EF9AFD178A050F9026F; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+17:02:49.820 [main] ERROR com.intuit.karate - status code was: 201, expected: 422, response time: 104, url: http://13.78.33.186:8080/v1/datasubject/accounts, response: 
+17:04:15.953 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+17:04:16.292 [main] DEBUG com.intuit.karate - request:
+1 > POST http://13.78.33.186:8080/v1/datasubject/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"account_id":55,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+17:04:16.436 [main] DEBUG com.intuit.karate - response time in milliseconds: 143.40
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Thu, 25 Jul 2019 08:04:17 GMT
+1 < Expires: 0
+1 < Location: http://13.78.33.186:8080/v1/datasubject/accounts/55
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=94A4A162978486D77BB4CE10D20F6F64; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+17:04:16.448 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+17:04:16.456 [main] DEBUG com.intuit.karate - request:
+1 > POST http://13.78.33.186:8080/v1/datasubject/accounts/55/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 21
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"abcdef"}
+
+17:04:16.563 [main] DEBUG com.intuit.karate - response time in milliseconds: 106.01
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDM2NTcsImlhdCI6MTU2NDA0MTg1N30.V_AU4h2hD7S9-VZFoi4-XkOqk6a7LbMb5swsGNxrmQM
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Thu, 25 Jul 2019 08:04:17 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=DDCBF102009C5E9BB9A9DC4A8186E902; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+17:04:16.580 [main] INFO  com.intuit.karate - [print] authorization key is  [
+  "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDM2NTcsImlhdCI6MTU2NDA0MTg1N30.V_AU4h2hD7S9-VZFoi4-XkOqk6a7LbMb5swsGNxrmQM"
+]
+
+17:04:16.584 [main] DEBUG com.intuit.karate - request:
+2 > GET http://13.78.33.186:8080/v1/datasubject/accounts/55
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDM2NTcsImlhdCI6MTU2NDA0MTg1N30.V_AU4h2hD7S9-VZFoi4-XkOqk6a7LbMb5swsGNxrmQM
+2 > Connection: Keep-Alive
+2 > Cookie: JSESSIONID=DDCBF102009C5E9BB9A9DC4A8186E902
+2 > Host: 13.78.33.186:8080
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:04:16.604 [main] DEBUG com.intuit.karate - response time in milliseconds: 17.04
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Thu, 25 Jul 2019 08:04:17 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Set-Cookie: JSESSIONID=DC6C54B60CFDE31A790D112C62E8BF65; Path=/v1; HttpOnly
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"data_subject_id":"55","first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","identification_id":null,"registered_at":"2019-07-25T08:04:17.313Z","last_updated_at":null}
+
+17:04:16.623 [main] DEBUG com.intuit.karate - request:
+3 > GET http://13.78.33.186:8080/v1/datasubject/accounts/55/processingrequests
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDM2NTcsImlhdCI6MTU2NDA0MTg1N30.V_AU4h2hD7S9-VZFoi4-XkOqk6a7LbMb5swsGNxrmQM
+3 > Connection: Keep-Alive
+3 > Cookie: JSESSIONID=DC6C54B60CFDE31A790D112C62E8BF65
+3 > Host: 13.78.33.186:8080
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:04:16.645 [main] DEBUG com.intuit.karate - response time in milliseconds: 21.66
+3 < 200
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Content-Type: application/json;charset=UTF-8
+3 < Date: Thu, 25 Jul 2019 08:04:17 GMT
+3 < Expires: 0
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+[]
+
+17:04:16.657 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+17:04:16.668 [main] DEBUG com.intuit.karate - request:
+1 > GET http://13.78.33.186:8080/v1/datasubject/accounts/55
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:04:16.690 [main] DEBUG com.intuit.karate - response time in milliseconds: 19.03
+1 < 401
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 152
+1 < Content-Type: application/json;charset=ISO-8859-1
+1 < Date: Thu, 25 Jul 2019 08:04:17 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=FD8DBCACE278D33C4C34AE1D7D1BFEC3; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"No credentials provided","message":"Full authentication is required to access this resource","debug_id":"3a4cd56c-bf9b-4e55-839d-4cf14ab36212"}
+
+17:04:16.703 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+17:04:16.712 [main] DEBUG com.intuit.karate - request:
+1 > POST http://13.78.33.186:8080/v1/datasubject/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"account_id":54,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+17:04:16.733 [main] DEBUG com.intuit.karate - response time in milliseconds: 20.15
+1 < 422
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 25 Jul 2019 08:04:17 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=D57740A9777D31BE57C3F10E3F44F522; Path=/v1; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (54) already exist","debug_id":"830dcaaf-95a9-48b7-b9af-cf076d2d3a34"}
+
+17:04:54.378 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:04:54.718 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/datasubject/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"account_id":55,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+17:04:54.837 [main] DEBUG com.intuit.karate - response time in milliseconds: 118.18
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Thu, 25 Jul 2019 08:04:54 GMT
+1 < Expires: 0
+1 < Location: http://localhost:8080/v1/datasubject/accounts/55
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=41CC7FC9535A01B71EAAD38459FEB0FD; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+17:04:54.851 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:04:54.856 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/datasubject/accounts/55/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 21
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"abcdef"}
+
+17:04:54.944 [main] DEBUG com.intuit.karate - response time in milliseconds: 87.96
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDM2OTQsImlhdCI6MTU2NDA0MTg5NH0.4c1vW-8kHEKDh1bUxaNuaP4698JV1majaQ_-fIJjUhE
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Thu, 25 Jul 2019 08:04:54 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=274E8621C52D609612880B661B93F7F9; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+17:04:55.004 [main] INFO  com.intuit.karate - [print] authorization key is  [
+  "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDM2OTQsImlhdCI6MTU2NDA0MTg5NH0.4c1vW-8kHEKDh1bUxaNuaP4698JV1majaQ_-fIJjUhE"
+]
+
+17:04:55.024 [main] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:8080/v1/datasubject/accounts/55
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDM2OTQsImlhdCI6MTU2NDA0MTg5NH0.4c1vW-8kHEKDh1bUxaNuaP4698JV1majaQ_-fIJjUhE
+2 > Connection: Keep-Alive
+2 > Cookie: JSESSIONID=274E8621C52D609612880B661B93F7F9
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:04:55.051 [main] DEBUG com.intuit.karate - response time in milliseconds: 26.65
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Thu, 25 Jul 2019 08:04:54 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Set-Cookie: JSESSIONID=54B4A0ECF2A70F2FBC3D85B22BDCAD61; Path=/v1; HttpOnly
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"data_subject_id":"55","first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","identification_id":null,"registered_at":"2019-07-25T08:04:54.822Z","last_updated_at":null}
+
+17:04:55.059 [main] DEBUG com.intuit.karate - request:
+3 > GET http://localhost:8080/v1/datasubject/accounts/55/processingrequests
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDM2OTQsImlhdCI6MTU2NDA0MTg5NH0.4c1vW-8kHEKDh1bUxaNuaP4698JV1majaQ_-fIJjUhE
+3 > Connection: Keep-Alive
+3 > Cookie: JSESSIONID=54B4A0ECF2A70F2FBC3D85B22BDCAD61
+3 > Host: localhost:8080
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:04:55.087 [main] DEBUG com.intuit.karate - response time in milliseconds: 26.83
+3 < 200
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Content-Type: application/json;charset=UTF-8
+3 < Date: Thu, 25 Jul 2019 08:04:54 GMT
+3 < Expires: 0
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+[]
+
+17:04:55.101 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:04:55.104 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/v1/datasubject/accounts/55
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:04:55.113 [main] DEBUG com.intuit.karate - response time in milliseconds: 8.25
+1 < 401
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 152
+1 < Content-Type: application/json;charset=ISO-8859-1
+1 < Date: Thu, 25 Jul 2019 08:04:54 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=6C1EF110646021869494C1B914A5449D; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"No credentials provided","message":"Full authentication is required to access this resource","debug_id":"2ac4d4e2-562f-45f6-a23d-72dc00e1ff75"}
+
+17:04:55.123 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:04:55.132 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/datasubject/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"account_id":54,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+17:04:55.147 [main] DEBUG com.intuit.karate - response time in milliseconds: 14.10
+1 < 422
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 25 Jul 2019 08:04:54 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=843307533C065D2C0DB0223B6404D325; Path=/v1; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (54) already exist","debug_id":"30c0daea-2f45-40cb-abd7-5de1971e2855"}
+
+17:29:32.495 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:29:32.895 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/datasubject/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"account_id":55,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+17:29:32.942 [main] DEBUG com.intuit.karate - response time in milliseconds: 46.23
+1 < 422
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 25 Jul 2019 08:29:32 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=2785D7A627DE2702F0F2127471BDE3DE; Path=/v1; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (55) already exist","debug_id":"62288ce8-36be-4894-98d7-151675d59e43"}
+
+17:29:32.948 [main] ERROR com.intuit.karate - status code was: 422, expected: 201, response time: 46, url: http://localhost:8080/v1/datasubject/accounts, response: {"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (55) already exist","debug_id":"62288ce8-36be-4894-98d7-151675d59e43"}
+17:29:32.981 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:29:32.989 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/datasubject/accounts/55/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 21
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"abcdef"}
+
+17:29:33.079 [main] DEBUG com.intuit.karate - response time in milliseconds: 89.46
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDUxNzMsImlhdCI6MTU2NDA0MzM3M30.mJTOHoCmR6485Iq68j3RLt-0-wZvswqX-6Lu4gZ6dVw
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Thu, 25 Jul 2019 08:29:32 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=BB9030FE309A1F1E4B16993CE5F8A38A; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+17:29:33.089 [main] INFO  com.intuit.karate - [print] authorization key is  [
+  "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDUxNzMsImlhdCI6MTU2NDA0MzM3M30.mJTOHoCmR6485Iq68j3RLt-0-wZvswqX-6Lu4gZ6dVw"
+]
+
+17:29:33.094 [main] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:8080/v1/datasubject/accounts/55
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDUxNzMsImlhdCI6MTU2NDA0MzM3M30.mJTOHoCmR6485Iq68j3RLt-0-wZvswqX-6Lu4gZ6dVw
+2 > Connection: Keep-Alive
+2 > Cookie: JSESSIONID=BB9030FE309A1F1E4B16993CE5F8A38A
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:29:33.114 [main] DEBUG com.intuit.karate - response time in milliseconds: 19.74
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Thu, 25 Jul 2019 08:29:32 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Set-Cookie: JSESSIONID=9DB57EEAE1395F064D1945A3B746F5FE; Path=/v1; HttpOnly
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"data_subject_id":"55","first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","identification_id":null,"registered_at":"2019-07-25T08:04:54.822Z","last_updated_at":null}
+
+17:29:33.168 [main] DEBUG com.intuit.karate - request:
+3 > GET http://localhost:8080/v1/datasubject/accounts/55/processingrequests
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDUxNzMsImlhdCI6MTU2NDA0MzM3M30.mJTOHoCmR6485Iq68j3RLt-0-wZvswqX-6Lu4gZ6dVw
+3 > Connection: Keep-Alive
+3 > Cookie: JSESSIONID=9DB57EEAE1395F064D1945A3B746F5FE
+3 > Host: localhost:8080
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:29:33.220 [main] DEBUG com.intuit.karate - response time in milliseconds: 51.08
+3 < 200
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Content-Type: application/json;charset=UTF-8
+3 < Date: Thu, 25 Jul 2019 08:29:32 GMT
+3 < Expires: 0
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+[]
+
+17:29:33.232 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:29:33.234 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/v1/datasubject/accounts/55
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:29:33.239 [main] DEBUG com.intuit.karate - response time in milliseconds: 4.94
+1 < 401
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 152
+1 < Content-Type: application/json;charset=ISO-8859-1
+1 < Date: Thu, 25 Jul 2019 08:29:32 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=14FC7EB5C5261D8962144B47F8A79EFA; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"No credentials provided","message":"Full authentication is required to access this resource","debug_id":"87c81dae-8b4e-4972-bd72-3d7862f0c6e6"}
+
+17:29:33.249 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:29:33.260 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/datasubject/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"account_id":54,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+17:29:33.287 [main] DEBUG com.intuit.karate - response time in milliseconds: 24.57
+1 < 422
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 25 Jul 2019 08:29:32 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=78D8A932BA293905209F81B399A3BE88; Path=/v1; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (54) already exist","debug_id":"1307b5d0-ffd4-4c0b-96c8-6deb563c62f7"}
+
+17:29:33.297 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:29:33.301 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+17:29:33.412 [main] DEBUG com.intuit.karate - response time in milliseconds: 109.30
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQwNDUxNzMsImlhdCI6MTU2NDA0MzM3M30.tj76wfNa1_w640S5g-XDyeS7sIyUlEctcuq1AY2TZqY
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Thu, 25 Jul 2019 08:29:32 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=DAC44911A13DDF463ABF36D6A7A82B28; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+17:40:41.608 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:40:42.037 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/datasubject/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"account_id":55,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+17:40:42.111 [main] DEBUG com.intuit.karate - response time in milliseconds: 73.05
+1 < 422
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 25 Jul 2019 08:40:42 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=4602B8551049E4D59B137ADFEDE06BA4; Path=/v1; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (55) already exist","debug_id":"6a344f7c-8346-4c1b-bbad-88fc1f51bc63"}
+
+17:40:42.113 [main] ERROR com.intuit.karate - status code was: 422, expected: 201, response time: 73, url: http://localhost:8080/v1/datasubject/accounts, response: {"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (55) already exist","debug_id":"6a344f7c-8346-4c1b-bbad-88fc1f51bc63"}
+17:40:42.127 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:40:42.133 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/datasubject/accounts/55/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 21
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"abcdef"}
+
+17:40:42.213 [main] DEBUG com.intuit.karate - response time in milliseconds: 79.98
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDU4NDIsImlhdCI6MTU2NDA0NDA0Mn0.D5OeiDSdkwFm9CI4NWipJ73iBDYbo3DN73BFT-wz1-o
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Thu, 25 Jul 2019 08:40:42 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=27DF6CDF712C44C475CB4F763C86B4BD; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+17:40:42.223 [main] INFO  com.intuit.karate - [print] authorization key is  [
+  "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDU4NDIsImlhdCI6MTU2NDA0NDA0Mn0.D5OeiDSdkwFm9CI4NWipJ73iBDYbo3DN73BFT-wz1-o"
+]
+
+17:40:42.228 [main] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:8080/v1/datasubject/accounts/55
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDU4NDIsImlhdCI6MTU2NDA0NDA0Mn0.D5OeiDSdkwFm9CI4NWipJ73iBDYbo3DN73BFT-wz1-o
+2 > Connection: Keep-Alive
+2 > Cookie: JSESSIONID=27DF6CDF712C44C475CB4F763C86B4BD
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:40:42.247 [main] DEBUG com.intuit.karate - response time in milliseconds: 17.23
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Thu, 25 Jul 2019 08:40:42 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Set-Cookie: JSESSIONID=70013EBFA5AD17BD9732A7ACAD73CF16; Path=/v1; HttpOnly
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"data_subject_id":"55","first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","identification_id":null,"registered_at":"2019-07-25T08:04:54.822Z","last_updated_at":null}
+
+17:40:42.273 [main] DEBUG com.intuit.karate - request:
+3 > GET http://localhost:8080/v1/datasubject/accounts/55/processingrequests
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDU4NDIsImlhdCI6MTU2NDA0NDA0Mn0.D5OeiDSdkwFm9CI4NWipJ73iBDYbo3DN73BFT-wz1-o
+3 > Connection: Keep-Alive
+3 > Cookie: JSESSIONID=70013EBFA5AD17BD9732A7ACAD73CF16
+3 > Host: localhost:8080
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:40:42.319 [main] DEBUG com.intuit.karate - response time in milliseconds: 20.29
+3 < 200
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Content-Type: application/json;charset=UTF-8
+3 < Date: Thu, 25 Jul 2019 08:40:42 GMT
+3 < Expires: 0
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+[]
+
+17:40:42.349 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:40:42.352 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/v1/datasubject/accounts/55
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:40:42.358 [main] DEBUG com.intuit.karate - response time in milliseconds: 5.28
+1 < 401
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 152
+1 < Content-Type: application/json;charset=ISO-8859-1
+1 < Date: Thu, 25 Jul 2019 08:40:42 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=3D31DD6CE402B08838DC11CBA5989D7F; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"No credentials provided","message":"Full authentication is required to access this resource","debug_id":"500f0dfa-0c79-49db-9d9e-10d2c0f33085"}
+
+17:40:42.377 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:40:42.383 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/datasubject/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"account_id":54,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+17:40:42.395 [main] DEBUG com.intuit.karate - response time in milliseconds: 11.96
+1 < 422
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 25 Jul 2019 08:40:42 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=30766F1A10236252C91602231FC5754A; Path=/v1; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (54) already exist","debug_id":"5d16b853-643b-4632-a8ef-de1aecb1b51e"}
+
+17:40:42.411 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:40:42.415 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+17:40:42.510 [main] DEBUG com.intuit.karate - response time in milliseconds: 93.94
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQwNDU4NDIsImlhdCI6MTU2NDA0NDA0Mn0.s9moWD_5jiYo16lokWsPsXRxCJDjlY42T5HE5dr0x_c
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Thu, 25 Jul 2019 08:40:42 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=12CB5B0F74E043CC736BF5E9E71A9A86; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+18:19:09.714 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+18:19:10.032 [main] DEBUG com.intuit.karate - request:
+1 > POST http://13.78.33.186:8080/v1/datasubject/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"account_id":56,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+18:19:10.190 [main] DEBUG com.intuit.karate - response time in milliseconds: 157.34
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Thu, 25 Jul 2019 09:19:11 GMT
+1 < Expires: 0
+1 < Location: http://13.78.33.186:8080/v1/datasubject/accounts/56
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=272C9F70EBA687E51AF2B8DB77E482DB; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+18:19:10.202 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+18:19:10.208 [main] DEBUG com.intuit.karate - request:
+1 > POST http://13.78.33.186:8080/v1/datasubject/accounts/56/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 21
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"abcdef"}
+
+18:19:10.313 [main] DEBUG com.intuit.karate - response time in milliseconds: 103.88
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NiIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDgxNTEsImlhdCI6MTU2NDA0NjM1MX0.tX9SKWndlyCY1-gl3PZDCqlHL8gcuA3MzeJbEFjmj0k
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Thu, 25 Jul 2019 09:19:11 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=D57F12CFEE48FAFBAE76FD6CD6B1CDD1; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+18:19:10.331 [main] INFO  com.intuit.karate - [print] authorization key is  [
+  "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NiIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDgxNTEsImlhdCI6MTU2NDA0NjM1MX0.tX9SKWndlyCY1-gl3PZDCqlHL8gcuA3MzeJbEFjmj0k"
+]
+
+18:19:10.338 [main] DEBUG com.intuit.karate - request:
+2 > GET http://13.78.33.186:8080/v1/datasubject/accounts/56
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NiIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDgxNTEsImlhdCI6MTU2NDA0NjM1MX0.tX9SKWndlyCY1-gl3PZDCqlHL8gcuA3MzeJbEFjmj0k
+2 > Connection: Keep-Alive
+2 > Cookie: JSESSIONID=D57F12CFEE48FAFBAE76FD6CD6B1CDD1
+2 > Host: 13.78.33.186:8080
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+18:19:10.371 [main] DEBUG com.intuit.karate - response time in milliseconds: 31.88
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Thu, 25 Jul 2019 09:19:11 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Set-Cookie: JSESSIONID=9DC189133A5C4BA9E896C46AB5FDB333; Path=/v1; HttpOnly
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"data_subject_id":"56","first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","identification_id":null,"registered_at":"2019-07-25T09:19:11.460Z","last_updated_at":null}
+
+18:19:10.379 [main] DEBUG com.intuit.karate - request:
+3 > GET http://13.78.33.186:8080/v1/datasubject/accounts/56/processingrequests
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NiIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQwNDgxNTEsImlhdCI6MTU2NDA0NjM1MX0.tX9SKWndlyCY1-gl3PZDCqlHL8gcuA3MzeJbEFjmj0k
+3 > Connection: Keep-Alive
+3 > Cookie: JSESSIONID=9DC189133A5C4BA9E896C46AB5FDB333
+3 > Host: 13.78.33.186:8080
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+18:19:10.403 [main] DEBUG com.intuit.karate - response time in milliseconds: 23.74
+3 < 200
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Content-Type: application/json;charset=UTF-8
+3 < Date: Thu, 25 Jul 2019 09:19:11 GMT
+3 < Expires: 0
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+[]
+
+18:19:10.417 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+18:19:10.420 [main] DEBUG com.intuit.karate - request:
+1 > GET http://13.78.33.186:8080/v1/datasubject/accounts/56
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+18:19:10.434 [main] DEBUG com.intuit.karate - response time in milliseconds: 13.49
+1 < 401
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 152
+1 < Content-Type: application/json;charset=ISO-8859-1
+1 < Date: Thu, 25 Jul 2019 09:19:11 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=0CCB04F932F53E35C14AC408A3B8C839; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"No credentials provided","message":"Full authentication is required to access this resource","debug_id":"0950a984-ba35-4955-abc6-05fd8197b4fc"}
+
+18:19:10.441 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+18:19:10.455 [main] DEBUG com.intuit.karate - request:
+1 > POST http://13.78.33.186:8080/v1/datasubject/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"account_id":55,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+18:19:10.470 [main] DEBUG com.intuit.karate - response time in milliseconds: 13.24
+1 < 422
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Thu, 25 Jul 2019 09:19:11 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=BD40AB97D67796C0B652682755626E08; Path=/v1; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (55) already exist","debug_id":"0d13d0c2-bb38-47c0-a622-2110e9d22516"}
+
+18:19:10.488 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+18:19:10.492 [main] DEBUG com.intuit.karate - request:
+1 > POST http://13.78.33.186:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+18:19:10.601 [main] DEBUG com.intuit.karate - response time in milliseconds: 105.93
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQwNDgxNTEsImlhdCI6MTU2NDA0NjM1MX0.9IIa8DMKNJXgaTi4dz9V4y9-DqmfTGAkORtSBXgXrho
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Thu, 25 Jul 2019 09:19:11 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=E79FFAD27DE1ABEA095D883B21E5E8F0; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
