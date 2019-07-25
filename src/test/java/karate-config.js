@@ -6,13 +6,13 @@ function fn() {
   }
   var config = {
     env: env,
-	myVarName: 'someValue'
-  }
+	baseUrl : 'http://localhost:8080/v1/',
+
+  };
   if (env == 'dev') {
-    // customize
-    // e.g. config.foo = 'bar';
+  config.baseUrl = 'http://localhost:8080/v1/';
   } else if (env == 'e2e') {
-    // customize
+  config.baseUrl = 'http://13.78.33.186:8080/v1';
   }
   return config;
 }
