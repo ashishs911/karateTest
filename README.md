@@ -39,8 +39,9 @@ This is a demo test project created for checking the feasibility of KarateDSL fo
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.2</version>
     </plugin>
+ 
     
- ##Script Basics:
+##Script Basics:
  * **Feature File** - A feature file is a repository of our tests which belong to a certain workflow of our API.
   A feature file can contain multiple scenarios covering the whole workflow or a single scenario which we want to re-use in other scenarios.
   A feautre file constitutes of background and scenarios
@@ -56,9 +57,9 @@ This is a demo test project created for checking the feasibility of KarateDSL fo
  * **Karate-config.js** this file is the place where we can do all environment specific settings specially when we want to test our script on the local dev environment before committing them to github.
  It also provides us with a common place to do the global setup which is shared amongst all the feature files e.g. baseurl details for the API.
  
- ##Running Scripts Using Jenkins:
+##Running Scripts Using Jenkins:
  To run Karate scripts periodically with CI tool like Jenkins we just need to define the Maven test command in the build step section of the Jenkins job.
- ###Steps to setup Jenkins:
+###Steps to setup Jenkins:
  * Login to your jenkins Instance, click on new Item and select a Freestyle project.
  * In the configuration of Freestyle project Provide the details of your Github project and repository.
  * In the build step select Invoke top level maven targets add the following command. 
@@ -66,7 +67,7 @@ This is a demo test project created for checking the feasibility of KarateDSL fo
         clean test -DargLine="-Dkarate.env=e2e" -Dtest=DataSubjectRunner
  
     * -Dtest - option defines the tests we want to run, If we are not running the whole project , optional.
-    * -Dargline - parameter defines the Environment in which we want to run our scripts using Karate variable Karate.env, optional
+    * -Dargline - parameter defines the Environment in which we want to run our scripts using Karate variable Karate.env, optional.
  * Save the Project and click on build now.
  
  

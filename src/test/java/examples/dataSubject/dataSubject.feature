@@ -1,4 +1,4 @@
-Feature: an example test based on datasubject account
+Feature: Test scripts based on DataSubject account Activities in Information bank.
 
   Background:
     * url baseUrl
@@ -46,11 +46,7 @@ Feature: an example test based on datasubject account
       Then status 422
       And match response contains {"name":"Object already exist"}
 
-  Scenario: log into Admin account
-    Given path 'admin/accounts/admin/jwt/token'
-    And request {"password": "admin"}
-    When method POST
-    Then status 200
+
 
 
 
