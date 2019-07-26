@@ -2,7 +2,7 @@ Feature: an example test based on datasubject account
 
   Background:
     * url baseUrl
-    * def acc_id = 57
+    * def acc_id = 58
 
     Scenario: Creating a data subject account
       Given path 'datasubject/accounts'
@@ -10,7 +10,7 @@ Feature: an example test based on datasubject account
       When method POST
       Then status 201
 
-    Scenario: logging into data subject account and getting details of the account created
+    Scenario: logging into data subject account, getting details of the account created and verifying the processing request for that data subject account
       Given path 'datasubject/accounts', acc_id,'/jwt/token'
       And request {"password": "abcdef"}
       When method POST
@@ -46,6 +46,11 @@ Feature: an example test based on datasubject account
       Then status 422
       And match response contains {"name":"Object already exist"}
 
+  Scenario: log into Admin account
+    Given path 'admin/accounts/admin/jwt/token'
+    And request {"password": "admin"}
+    When method POST
+    Then status 200
 
 
 
