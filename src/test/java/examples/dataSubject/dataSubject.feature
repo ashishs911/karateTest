@@ -2,7 +2,7 @@ Feature: Test scripts based on DataSubject account Activities in Information ban
 
   Background:
     * url baseUrl
-    * def acc_id = 58
+    * def acc_id = 59
 
     Scenario: Creating a data subject account
       Given path 'datasubject/accounts'

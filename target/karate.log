@@ -12997,3 +12997,1821 @@ user
 1 < X-Frame-Options: DENY
 1 < X-XSS-Protection: 1; mode=block
 
+11:38:04.903 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+11:38:05.320 [main] DEBUG com.intuit.karate - request:
+1 > POST http://13.78.33.186:8080/v1/datasubject/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"account_id":57,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+11:38:05.401 [main] DEBUG com.intuit.karate - response time in milliseconds: 79.49
+1 < 422
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 26 Jul 2019 02:38:06 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=1DBCEE647F57E89BD4943A0A60F3A8D7; Path=/v1; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (57) already exist","debug_id":"607a7712-ece9-493e-a1d1-d6ca043a9a4a"}
+
+11:38:05.404 [main] ERROR com.intuit.karate - status code was: 422, expected: 201, response time: 79, url: http://13.78.33.186:8080/v1/datasubject/accounts, response: {"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (57) already exist","debug_id":"607a7712-ece9-493e-a1d1-d6ca043a9a4a"}
+11:38:05.423 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+11:38:05.428 [main] DEBUG com.intuit.karate - request:
+1 > POST http://13.78.33.186:8080/v1/datasubject/accounts/57/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 21
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"abcdef"}
+
+11:38:05.554 [main] DEBUG com.intuit.karate - response time in milliseconds: 123.98
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NyIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQxMTA0ODYsImlhdCI6MTU2NDEwODY4Nn0.RmuwXvHt5BeRVUFjhkL4E8NSQRiPK2bd2Vb6JULTjYo
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 02:38:06 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=09BEDE768F44D84D1C5C47CB78B513D2; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+11:38:05.569 [main] INFO  com.intuit.karate - [print] authorization key is  [
+  "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NyIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQxMTA0ODYsImlhdCI6MTU2NDEwODY4Nn0.RmuwXvHt5BeRVUFjhkL4E8NSQRiPK2bd2Vb6JULTjYo"
+]
+
+11:38:05.577 [main] DEBUG com.intuit.karate - request:
+2 > GET http://13.78.33.186:8080/v1/datasubject/accounts/57
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NyIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQxMTA0ODYsImlhdCI6MTU2NDEwODY4Nn0.RmuwXvHt5BeRVUFjhkL4E8NSQRiPK2bd2Vb6JULTjYo
+2 > Connection: Keep-Alive
+2 > Cookie: JSESSIONID=09BEDE768F44D84D1C5C47CB78B513D2
+2 > Host: 13.78.33.186:8080
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+11:38:05.603 [main] DEBUG com.intuit.karate - response time in milliseconds: 21.65
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Fri, 26 Jul 2019 02:38:06 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Set-Cookie: JSESSIONID=16D32187FD2698A345F123044EA16BC5; Path=/v1; HttpOnly
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"data_subject_id":"57","first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","identification_id":null,"registered_at":"2019-07-25T09:29:41.082Z","last_updated_at":null}
+
+11:38:05.618 [main] DEBUG com.intuit.karate - request:
+3 > GET http://13.78.33.186:8080/v1/datasubject/accounts/57/processingrequests
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1NyIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQxMTA0ODYsImlhdCI6MTU2NDEwODY4Nn0.RmuwXvHt5BeRVUFjhkL4E8NSQRiPK2bd2Vb6JULTjYo
+3 > Connection: Keep-Alive
+3 > Cookie: JSESSIONID=16D32187FD2698A345F123044EA16BC5
+3 > Host: 13.78.33.186:8080
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+11:38:05.640 [main] DEBUG com.intuit.karate - response time in milliseconds: 20.99
+3 < 200
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Content-Type: application/json;charset=UTF-8
+3 < Date: Fri, 26 Jul 2019 02:38:06 GMT
+3 < Expires: 0
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+[]
+
+11:38:05.656 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+11:38:05.659 [main] DEBUG com.intuit.karate - request:
+1 > GET http://13.78.33.186:8080/v1/datasubject/accounts/57
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+11:38:05.682 [main] DEBUG com.intuit.karate - response time in milliseconds: 22.52
+1 < 401
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 152
+1 < Content-Type: application/json;charset=ISO-8859-1
+1 < Date: Fri, 26 Jul 2019 02:38:06 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=34A457BDEF3F8EF37B0486CB97D575C4; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"No credentials provided","message":"Full authentication is required to access this resource","debug_id":"df5ea874-58da-453c-9f74-f9da599fb563"}
+
+11:38:05.702 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+11:38:05.709 [main] DEBUG com.intuit.karate - request:
+1 > POST http://13.78.33.186:8080/v1/datasubject/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"account_id":56,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+11:38:05.733 [main] DEBUG com.intuit.karate - response time in milliseconds: 21.18
+1 < 422
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 26 Jul 2019 02:38:06 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=97906A3730B7A303AADEAB8230110A7C; Path=/v1; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (56) already exist","debug_id":"ccbe9b0e-f079-48ef-b182-70f814d8e132"}
+
+11:38:05.753 [main] INFO  com.intuit.karate - karate.env system property was: e2e 
+11:38:05.768 [main] DEBUG com.intuit.karate - request:
+1 > POST http://13.78.33.186:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: 13.78.33.186:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+11:38:05.989 [main] DEBUG com.intuit.karate - response time in milliseconds: 220.68
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTA0ODcsImlhdCI6MTU2NDEwODY4N30.2fOooN_9Uk55pebrpd_c-YdRt5nFL2NBci6x6DrJofw
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 02:38:06 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=4A8EC13D8ED68F24F163B45125A4C4BA; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+12:10:23.817 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:10:24.232 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+12:10:24.501 [main] DEBUG com.intuit.karate - response time in milliseconds: 265.32
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 03:10:24 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=5BE725E020E9FC4AD636181115D935B2; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+12:21:55.590 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:21:56.005 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+12:21:56.261 [main] DEBUG com.intuit.karate - response time in milliseconds: 254.63
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTMxMTYsImlhdCI6MTU2NDExMTMxNn0.G3dOb9XwAOh5IUsFCVpWncQ3BKvNNXK973NJtaKWGNM
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 03:21:56 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=1E70A4802D442FA542F2EAE4031347F0; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+12:21:56.379 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:21:56.382 [main] ERROR com.intuit.karate - http request failed: request body is required for a POST, please use the 'request' keyword
+12:23:03.215 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:23:03.551 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+12:23:03.660 [main] DEBUG com.intuit.karate - response time in milliseconds: 107.55
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTMxODMsImlhdCI6MTU2NDExMTM4M30.Rw7rVETP1rnp4TvS5rWYAx3jBnxJHsQXVQPjMt0OU1g
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 03:23:03 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=059B8FE697AA1AC98E008E16DB1847E2; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+12:23:03.670 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:23:03.674 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/thirdparties
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Content-Length: 82
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"name":"TP_first","email":"tp@xyz.com","phone_number":"12331","password":"third"}
+
+12:23:04.122 [main] DEBUG com.intuit.karate - response time in milliseconds: 447.60
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 03:23:03 GMT
+1 < Expires: 0
+1 < Location: http://localhost:8080/v1/admin/thirdparties/1f9405ea-676a-40d1-bb75-5e184b7c7cf7
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=91CB67E4DFD3E30414BF92F5E7DE1C68; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+12:23:04.123 [main] ERROR com.intuit.karate - status code was: 201, expected: 200, response time: 448, url: http://localhost:8080/v1/admin/thirdparties, response: 
+12:23:42.327 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:23:42.664 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+12:23:42.767 [main] DEBUG com.intuit.karate - response time in milliseconds: 102.10
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTMyMjIsImlhdCI6MTU2NDExMTQyMn0.bFuemI5P-Weoz370e8jE6xlHvXHaWiAeDp_lp4HF3es
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 03:23:42 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=382C836F5537C5CBB0EEF2A844327620; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+12:23:42.780 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:23:42.783 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/thirdparties
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Content-Length: 82
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"name":"TP_first","email":"tp@xyz.com","phone_number":"12331","password":"third"}
+
+12:23:42.876 [main] DEBUG com.intuit.karate - response time in milliseconds: 92.35
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 03:23:42 GMT
+1 < Expires: 0
+1 < Location: http://localhost:8080/v1/admin/thirdparties/77455f66-ef6b-4d46-a3b6-17d6f3cce02f
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=8D041FC6C596DD0E549806E5858710C3; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+12:28:39.381 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:28:39.797 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+12:28:39.908 [main] DEBUG com.intuit.karate - response time in milliseconds: 110.58
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTM1MTksImlhdCI6MTU2NDExMTcxOX0.46xh-I5DvfqZelYymImGkTRT1NsV98Fk4a3JEbma5n0
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 03:28:39 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=696879416AE8366A7C3947A624A6DEF6; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+12:28:39.918 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:28:39.922 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/thirdparties
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Content-Length: 82
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"name":"TP_first","email":"tp@xyz.com","phone_number":"12331","password":"third"}
+
+12:28:40.017 [main] DEBUG com.intuit.karate - response time in milliseconds: 94.19
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 03:28:39 GMT
+1 < Expires: 0
+1 < Location: http://localhost:8080/v1/admin/thirdparties/618544ae-447a-4a1d-8a8e-d6d1ff084865
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=E289D79A248F481474D95E7FD012DDE0; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+12:28:40.088 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:58.815 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:58.898 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:30:58.912 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:32:21.708 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:32:21.765 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:32:21.775 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:33:07.736 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:33:08.111 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+12:33:08.220 [main] DEBUG com.intuit.karate - response time in milliseconds: 108.09
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTM3ODgsImlhdCI6MTU2NDExMTk4OH0.s0U1Dqsfao10Z31CiiK1Q9UYEmH2k3Pje_GEUgs4_lg
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 03:33:08 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=5A28DC785FB8A3E884CFAA8A85A605D5; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+12:33:08.232 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:33:08.240 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/thirdparties
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Content-Length: 82
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"name":"TP_first","email":"tp@xyz.com","phone_number":"12331","password":"third"}
+
+12:33:08.337 [main] DEBUG com.intuit.karate - response time in milliseconds: 96.31
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 03:33:08 GMT
+1 < Expires: 0
+1 < Location: http://localhost:8080/v1/admin/thirdparties/d5dba40c-b95b-4d1b-bff8-76c288977934
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=EA48B1F877EFD44EC739802D0E27B13C; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+12:33:08.378 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:33:08.396 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/v1/admin/thirdparties/77455f66-ef6b-4d46-a3b6-17d6f3cce02f
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+12:33:08.474 [main] DEBUG com.intuit.karate - response time in milliseconds: 77.22
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 26 Jul 2019 03:33:08 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=AF8FD51730CC62BD4F1CE386DCD2AF56; Path=/v1; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"third_party_id":"77455f66-ef6b-4d46-a3b6-17d6f3cce02f","name":"TP_first","email":"tp@xyz.com","phone_number":"12331","hashed_password":"$2a$10$u0HINyZNwCLV7zMrpgSYeuXVNUiyqNseqKPlIS4wdHJXQPkyz46u2","last_updated_at":"2019-07-26T03:23:42.868Z"}
+
+12:34:59.110 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:34:59.450 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+12:34:59.558 [main] DEBUG com.intuit.karate - response time in milliseconds: 107.35
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTM4OTksImlhdCI6MTU2NDExMjA5OX0.yYNeHaOjn-_6K_fBob_qRnmlAc7O2x8NssxKVCIfpNM
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 03:34:59 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=C1B1A75275C458242B6658575191BAD3; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+12:34:59.568 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:34:59.572 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/thirdparties
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Content-Length: 82
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"name":"TP_first","email":"tp@xyz.com","phone_number":"12331","password":"third"}
+
+12:34:59.649 [main] DEBUG com.intuit.karate - response time in milliseconds: 76.73
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 03:34:59 GMT
+1 < Expires: 0
+1 < Location: http://localhost:8080/v1/admin/thirdparties/eb98db4c-14a9-4917-9ea7-06b5523e9ce3
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=553DB4580D502BA2576F493E220A3441; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+12:34:59.693 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:34:59.702 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/v1/admin/thirdparties/77455f66-ef6b-4d46-a3b6-17d6f3cce02f
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+12:34:59.736 [main] DEBUG com.intuit.karate - response time in milliseconds: 32.63
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 26 Jul 2019 03:34:59 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=0A9AC894090BB1CAD14999D243FECECD; Path=/v1; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"third_party_id":"77455f66-ef6b-4d46-a3b6-17d6f3cce02f","name":"TP_first","email":"tp@xyz.com","phone_number":"12331","hashed_password":"$2a$10$u0HINyZNwCLV7zMrpgSYeuXVNUiyqNseqKPlIS4wdHJXQPkyz46u2","last_updated_at":"2019-07-26T03:23:42.868Z"}
+
+12:44:49.501 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:44:49.962 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"third"}
+
+12:44:50.079 [main] DEBUG com.intuit.karate - response time in milliseconds: 115.43
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQxMTQ0OTAsImlhdCI6MTU2NDExMjY5MH0.-FQ9JA7Y3r1H4xxaqG5brs6h20aW5tzAz0NnOgDPQJ4
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 03:44:50 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=7CF76CF0BFC24A7E47D0B5C62F5C3F3B; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+13:13:28.888 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:13:28.965 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:13:56.994 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:13:57.048 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:14:18.664 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:14:19.057 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQxMTQ0OTAsImlhdCI6MTU2NDExMjY5MH0.-FQ9JA7Y3r1H4xxaqG5brs6h20aW5tzAz0NnOgDPQJ4
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"third"}
+
+13:14:19.180 [main] DEBUG com.intuit.karate - response time in milliseconds: 122.22
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQxMTYyNTksImlhdCI6MTU2NDExNDQ1OX0.7rP3f2BaoqLRHJW3dkIUwO0NWO27Mo57tFUBHX4kwkM
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 04:14:19 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=D9A9B980B8FD0047E6518A7684919AA1; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+13:14:19.190 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:14:19.194 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/sub
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQxMTQ0OTAsImlhdCI6MTU2NDExMjY5MH0.-FQ9JA7Y3r1H4xxaqG5brs6h20aW5tzAz0NnOgDPQJ4
+1 > Connection: Keep-Alive
+1 > Content-Length: 122
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"first_name":"sub","middle_name":"tp","last_name":"acc","email":"sub@xyz.com","password":"subacc","phone_number":"12331"}
+
+13:14:19.362 [main] DEBUG com.intuit.karate - response time in milliseconds: 167.62
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 04:14:19 GMT
+1 < Expires: 0
+1 < Location: http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/sub/428bc15e-c249-4f23-8ea8-04593a2e2796
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=FB5516B7C85A41DA762A887719DE083B; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+14:24:06.803 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:24:07.234 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQxMTQ0OTAsImlhdCI6MTU2NDExMjY5MH0.-FQ9JA7Y3r1H4xxaqG5brs6h20aW5tzAz0NnOgDPQJ4
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"third"}
+
+14:24:07.292 [main] DEBUG com.intuit.karate - response time in milliseconds: 55.51
+1 < 500
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: close
+1 < Content-Language: en
+1 < Content-Length: 7945
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Fri, 26 Jul 2019 05:24:07 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=A2046682ED880CEA04102BE4EF3BD2EA; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+<!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Error validating the jwt token</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>com.scalar.information_bank.api.security.AuthenticationException: Error validating the jwt token
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:82)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-26T13:14:50Z. Current time: 2019-07-26T14:24:07Z, a difference of 4157261 milliseconds.  Allowed clock skew: 0 milliseconds.
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	com.scalar.information_bank.api.security.JwtTokenService.getAllClaimsFromToken(JwtTokenService.java:157)
+	com.scalar.information_bank.api.security.JwtTokenService.getClaimFromToken(JwtTokenService.java:151)
+	com.scalar.information_bank.api.security.JwtTokenService.getSubjectIdFromToken(JwtTokenService.java:132)
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:77)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+
+14:24:07.303 [main] WARN  com.intuit.karate - xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+14:24:07.304 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 56, url: http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/jwt/token, response: <!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Error validating the jwt token</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>com.scalar.information_bank.api.security.AuthenticationException: Error validating the jwt token
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:82)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-26T13:14:50Z. Current time: 2019-07-26T14:24:07Z, a difference of 4157261 milliseconds.  Allowed clock skew: 0 milliseconds.
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	com.scalar.information_bank.api.security.JwtTokenService.getAllClaimsFromToken(JwtTokenService.java:157)
+	com.scalar.information_bank.api.security.JwtTokenService.getClaimFromToken(JwtTokenService.java:151)
+	com.scalar.information_bank.api.security.JwtTokenService.getSubjectIdFromToken(JwtTokenService.java:132)
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:77)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+14:24:07.315 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:24:07.320 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/sub
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQxMTQ0OTAsImlhdCI6MTU2NDExMjY5MH0.-FQ9JA7Y3r1H4xxaqG5brs6h20aW5tzAz0NnOgDPQJ4
+1 > Connection: Keep-Alive
+1 > Content-Length: 122
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"first_name":"sub","middle_name":"tp","last_name":"acc","email":"sub@xyz.com","password":"subacc","phone_number":"12331"}
+
+14:24:07.333 [main] DEBUG com.intuit.karate - response time in milliseconds: 11.99
+1 < 500
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: close
+1 < Content-Language: en
+1 < Content-Length: 7945
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Fri, 26 Jul 2019 05:24:07 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=70C648ACBDECA703D3C7E8BB16B2FA11; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+<!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Error validating the jwt token</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>com.scalar.information_bank.api.security.AuthenticationException: Error validating the jwt token
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:82)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-26T13:14:50Z. Current time: 2019-07-26T14:24:07Z, a difference of 4157325 milliseconds.  Allowed clock skew: 0 milliseconds.
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	com.scalar.information_bank.api.security.JwtTokenService.getAllClaimsFromToken(JwtTokenService.java:157)
+	com.scalar.information_bank.api.security.JwtTokenService.getClaimFromToken(JwtTokenService.java:151)
+	com.scalar.information_bank.api.security.JwtTokenService.getSubjectIdFromToken(JwtTokenService.java:132)
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:77)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+
+14:24:07.349 [main] WARN  com.intuit.karate - xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+14:24:07.352 [main] ERROR com.intuit.karate - status code was: 500, expected: 201, response time: 12, url: http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/sub, response: <!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Error validating the jwt token</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>com.scalar.information_bank.api.security.AuthenticationException: Error validating the jwt token
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:82)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-26T13:14:50Z. Current time: 2019-07-26T14:24:07Z, a difference of 4157325 milliseconds.  Allowed clock skew: 0 milliseconds.
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	com.scalar.information_bank.api.security.JwtTokenService.getAllClaimsFromToken(JwtTokenService.java:157)
+	com.scalar.information_bank.api.security.JwtTokenService.getClaimFromToken(JwtTokenService.java:151)
+	com.scalar.information_bank.api.security.JwtTokenService.getSubjectIdFromToken(JwtTokenService.java:132)
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:77)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+14:24:07.365 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:28:07.850 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:28:08.188 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+14:28:08.226 [main] DEBUG com.intuit.karate - response time in milliseconds: 34.44
+1 < 500
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: close
+1 < Content-Language: en
+1 < Content-Length: 7945
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Fri, 26 Jul 2019 05:28:08 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=118EB442A384B0B15BBFD6B2B6B76832; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+<!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Error validating the jwt token</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>com.scalar.information_bank.api.security.AuthenticationException: Error validating the jwt token
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:82)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-26T12:40:24Z. Current time: 2019-07-26T14:28:08Z, a difference of 6464205 milliseconds.  Allowed clock skew: 0 milliseconds.
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	com.scalar.information_bank.api.security.JwtTokenService.getAllClaimsFromToken(JwtTokenService.java:157)
+	com.scalar.information_bank.api.security.JwtTokenService.getClaimFromToken(JwtTokenService.java:151)
+	com.scalar.information_bank.api.security.JwtTokenService.getSubjectIdFromToken(JwtTokenService.java:132)
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:77)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+
+14:28:08.237 [main] WARN  com.intuit.karate - xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+14:28:08.237 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 34, url: http://localhost:8080/v1/admin/accounts/admin/jwt/token, response: <!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Error validating the jwt token</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>com.scalar.information_bank.api.security.AuthenticationException: Error validating the jwt token
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:82)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-26T12:40:24Z. Current time: 2019-07-26T14:28:08Z, a difference of 6464205 milliseconds.  Allowed clock skew: 0 milliseconds.
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	com.scalar.information_bank.api.security.JwtTokenService.getAllClaimsFromToken(JwtTokenService.java:157)
+	com.scalar.information_bank.api.security.JwtTokenService.getClaimFromToken(JwtTokenService.java:151)
+	com.scalar.information_bank.api.security.JwtTokenService.getSubjectIdFromToken(JwtTokenService.java:132)
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:77)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+14:28:08.261 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:28:08.265 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/thirdparties
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Content-Length: 82
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"name":"TP_first","email":"tp@xyz.com","phone_number":"12331","password":"third"}
+
+14:28:08.279 [main] DEBUG com.intuit.karate - response time in milliseconds: 13.18
+1 < 500
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: close
+1 < Content-Language: en
+1 < Content-Length: 7945
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Fri, 26 Jul 2019 05:28:08 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=1E16D613CC6CE46B105A6E890691794C; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+<!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Error validating the jwt token</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>com.scalar.information_bank.api.security.AuthenticationException: Error validating the jwt token
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:82)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-26T12:40:24Z. Current time: 2019-07-26T14:28:08Z, a difference of 6464269 milliseconds.  Allowed clock skew: 0 milliseconds.
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	com.scalar.information_bank.api.security.JwtTokenService.getAllClaimsFromToken(JwtTokenService.java:157)
+	com.scalar.information_bank.api.security.JwtTokenService.getClaimFromToken(JwtTokenService.java:151)
+	com.scalar.information_bank.api.security.JwtTokenService.getSubjectIdFromToken(JwtTokenService.java:132)
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:77)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+
+14:28:08.291 [main] WARN  com.intuit.karate - xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+14:28:08.295 [main] ERROR com.intuit.karate - status code was: 500, expected: 201, response time: 13, url: http://localhost:8080/v1/admin/thirdparties, response: <!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Error validating the jwt token</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>com.scalar.information_bank.api.security.AuthenticationException: Error validating the jwt token
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:82)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-26T12:40:24Z. Current time: 2019-07-26T14:28:08Z, a difference of 6464269 milliseconds.  Allowed clock skew: 0 milliseconds.
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	com.scalar.information_bank.api.security.JwtTokenService.getAllClaimsFromToken(JwtTokenService.java:157)
+	com.scalar.information_bank.api.security.JwtTokenService.getClaimFromToken(JwtTokenService.java:151)
+	com.scalar.information_bank.api.security.JwtTokenService.getSubjectIdFromToken(JwtTokenService.java:132)
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:77)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+14:28:08.319 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:28:08.322 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/v1/admin/thirdparties/77455f66-ef6b-4d46-a3b6-17d6f3cce02f
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+14:28:08.329 [main] DEBUG com.intuit.karate - response time in milliseconds: 6.02
+1 < 500
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: close
+1 < Content-Language: en
+1 < Content-Length: 7945
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Fri, 26 Jul 2019 05:28:08 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=BDFB6F8B3077C54719396410ADA0257F; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+<!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Error validating the jwt token</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>com.scalar.information_bank.api.security.AuthenticationException: Error validating the jwt token
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:82)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-26T12:40:24Z. Current time: 2019-07-26T14:28:08Z, a difference of 6464325 milliseconds.  Allowed clock skew: 0 milliseconds.
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	com.scalar.information_bank.api.security.JwtTokenService.getAllClaimsFromToken(JwtTokenService.java:157)
+	com.scalar.information_bank.api.security.JwtTokenService.getClaimFromToken(JwtTokenService.java:151)
+	com.scalar.information_bank.api.security.JwtTokenService.getSubjectIdFromToken(JwtTokenService.java:132)
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:77)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+
+14:28:08.330 [main] WARN  com.intuit.karate - xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+14:28:08.331 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 6, url: http://localhost:8080/v1/admin/thirdparties/77455f66-ef6b-4d46-a3b6-17d6f3cce02f, response: <!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Error validating the jwt token</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>com.scalar.information_bank.api.security.AuthenticationException: Error validating the jwt token
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:82)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-26T12:40:24Z. Current time: 2019-07-26T14:28:08Z, a difference of 6464325 milliseconds.  Allowed clock skew: 0 milliseconds.
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	com.scalar.information_bank.api.security.JwtTokenService.getAllClaimsFromToken(JwtTokenService.java:157)
+	com.scalar.information_bank.api.security.JwtTokenService.getClaimFromToken(JwtTokenService.java:151)
+	com.scalar.information_bank.api.security.JwtTokenService.getSubjectIdFromToken(JwtTokenService.java:132)
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:77)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+16:42:49.368 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:42:49.789 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMTI0MjQsImlhdCI6MTU2NDExMDYyNH0.rxPpQDzbD9ThF4IXuBZtFZaTb2xqWoCoFIw8r7fjrjU
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+16:42:49.882 [main] DEBUG com.intuit.karate - response time in milliseconds: 89.41
+1 < 500
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Connection: close
+1 < Content-Language: en
+1 < Content-Length: 7946
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Fri, 26 Jul 2019 07:42:49 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=923268020679990F9241F88D4A04717B; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+<!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Error validating the jwt token</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>com.scalar.information_bank.api.security.AuthenticationException: Error validating the jwt token
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:82)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-26T12:40:24Z. Current time: 2019-07-26T16:42:49Z, a difference of 14545843 milliseconds.  Allowed clock skew: 0 milliseconds.
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	com.scalar.information_bank.api.security.JwtTokenService.getAllClaimsFromToken(JwtTokenService.java:157)
+	com.scalar.information_bank.api.security.JwtTokenService.getClaimFromToken(JwtTokenService.java:151)
+	com.scalar.information_bank.api.security.JwtTokenService.getSubjectIdFromToken(JwtTokenService.java:132)
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:77)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+
+16:42:49.894 [main] WARN  com.intuit.karate - xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
+16:42:49.894 [main] ERROR com.intuit.karate - status code was: 500, expected: 200, response time: 89, url: http://localhost:8080/v1/admin/accounts/admin/jwt/token, response: <!doctype html><html lang="en"><head><title>HTTP Status 500 – Internal Server Error</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 500 – Internal Server Error</h1><hr class="line" /><p><b>Type</b> Exception Report</p><p><b>Message</b> Error validating the jwt token</p><p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p><p><b>Exception</b></p><pre>com.scalar.information_bank.api.security.AuthenticationException: Error validating the jwt token
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:82)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Root Cause</b></p><pre>io.jsonwebtoken.ExpiredJwtException: JWT expired at 2019-07-26T12:40:24Z. Current time: 2019-07-26T16:42:49Z, a difference of 14545843 milliseconds.  Allowed clock skew: 0 milliseconds.
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	com.scalar.information_bank.api.security.JwtTokenService.getAllClaimsFromToken(JwtTokenService.java:157)
+	com.scalar.information_bank.api.security.JwtTokenService.getClaimFromToken(JwtTokenService.java:151)
+	com.scalar.information_bank.api.security.JwtTokenService.getSubjectIdFromToken(JwtTokenService.java:132)
+	com.scalar.information_bank.api.security.JwtTokenService.hasToken(JwtTokenService.java:77)
+	com.scalar.information_bank.api.security.AuthenticationTokenFilter.doFilterInternal(AuthenticationTokenFilter.java:38)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:74)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+</pre><p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p><hr class="line" /><h3>Apache Tomcat/9.0.19</h3></body></html>
+16:43:41.023 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:43:41.352 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+16:43:41.484 [main] DEBUG com.intuit.karate - response time in milliseconds: 131.58
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMjg4MjEsImlhdCI6MTU2NDEyNzAyMX0.yuFaHBRjaHLTloqDx8iQ_Pp36XB1J1wnE6b41zAdFn0
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 07:43:41 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=34BBB928441EBC7ADAC219472D373DE5; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+16:46:08.418 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:46:08.829 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMjg4MjEsImlhdCI6MTU2NDEyNzAyMX0.yuFaHBRjaHLTloqDx8iQ_Pp36XB1J1wnE6b41zAdFn0
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+16:46:08.969 [main] DEBUG com.intuit.karate - response time in milliseconds: 139.09
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMjg5NjgsImlhdCI6MTU2NDEyNzE2OH0.N3Xl_2eYrnKwS29MWkI46oZqaNqzI4osix4s2IyXDUQ
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 07:46:08 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=CDB01735A6E81140F8AEE2BE75265290; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+16:46:08.980 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:46:08.984 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/admin/thirdparties
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMjg4MjEsImlhdCI6MTU2NDEyNzAyMX0.yuFaHBRjaHLTloqDx8iQ_Pp36XB1J1wnE6b41zAdFn0
+1 > Connection: Keep-Alive
+1 > Content-Length: 82
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"name":"TP_first","email":"tp@xyz.com","phone_number":"12331","password":"third"}
+
+16:46:09.098 [main] DEBUG com.intuit.karate - response time in milliseconds: 114.22
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 07:46:08 GMT
+1 < Expires: 0
+1 < Location: http://localhost:8080/v1/admin/thirdparties/ffc97e3e-dcec-49d4-980b-eaa73b025098
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=765CADB868F94B25E36EE2A700178560; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+16:46:09.140 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:46:09.154 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/v1/admin/thirdparties/77455f66-ef6b-4d46-a3b6-17d6f3cce02f
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQxMjg4MjEsImlhdCI6MTU2NDEyNzAyMX0.yuFaHBRjaHLTloqDx8iQ_Pp36XB1J1wnE6b41zAdFn0
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+16:46:09.182 [main] DEBUG com.intuit.karate - response time in milliseconds: 25.28
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 26 Jul 2019 07:46:08 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=4B6F26BF633C5EAAE043E058D0EE9E33; Path=/v1; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"third_party_id":"77455f66-ef6b-4d46-a3b6-17d6f3cce02f","name":"TP_first","email":"tp@xyz.com","phone_number":"12331","hashed_password":"$2a$10$u0HINyZNwCLV7zMrpgSYeuXVNUiyqNseqKPlIS4wdHJXQPkyz46u2","last_updated_at":"2019-07-26T03:23:42.868Z"}
+
+16:47:31.870 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:47:32.227 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"third"}
+
+16:47:32.339 [main] DEBUG com.intuit.karate - response time in milliseconds: 110.51
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQxMjkwNTIsImlhdCI6MTU2NDEyNzI1Mn0.h2-rCy_k6SFpqJeaMqTQulnq1y6iOfuEsx-4JOdQSF0
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 07:47:32 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=BF2D6AF12D122CBD3D33C2E9BF05BCBA; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+16:50:10.065 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:50:10.469 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQxMjkwNTIsImlhdCI6MTU2NDEyNzI1Mn0.h2-rCy_k6SFpqJeaMqTQulnq1y6iOfuEsx-4JOdQSF0
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"third"}
+
+16:50:10.595 [main] DEBUG com.intuit.karate - response time in milliseconds: 124.45
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQxMjkyMTAsImlhdCI6MTU2NDEyNzQxMH0.AgGXqr3CnLtUOdJfYnh-oMrI4DophedKIkCIOzvblu8
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 07:50:10 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=F64A20326AB2244191F033CD97A13716; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+16:50:10.606 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:50:10.612 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/sub
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQxMjkwNTIsImlhdCI6MTU2NDEyNzI1Mn0.h2-rCy_k6SFpqJeaMqTQulnq1y6iOfuEsx-4JOdQSF0
+1 > Connection: Keep-Alive
+1 > Content-Length: 122
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"first_name":"sub","middle_name":"tp","last_name":"acc","email":"sub@xyz.com","password":"subacc","phone_number":"12331"}
+
+16:50:10.855 [main] DEBUG com.intuit.karate - response time in milliseconds: 242.46
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 07:50:10 GMT
+1 < Expires: 0
+1 < Location: http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/sub/84f26284-7c6c-45a6-885c-e44fdb31ede3
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=39629B077E3A511CACD7D70C9C83B9E4; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+16:50:10.869 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:51:01.544 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:51:01.910 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQxMjkwNTIsImlhdCI6MTU2NDEyNzI1Mn0.h2-rCy_k6SFpqJeaMqTQulnq1y6iOfuEsx-4JOdQSF0
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"third"}
+
+16:51:02.009 [main] DEBUG com.intuit.karate - response time in milliseconds: 98.24
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQxMjkyNjIsImlhdCI6MTU2NDEyNzQ2Mn0.mUwHnsPFgwpDfijtcCEmyTCcCPV5AOojtV40R4PwMW4
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 07:51:02 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=87037A07B9939ABB39415B7B9BDBAD7B; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+16:51:02.018 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:51:02.023 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/sub
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQxMjkwNTIsImlhdCI6MTU2NDEyNzI1Mn0.h2-rCy_k6SFpqJeaMqTQulnq1y6iOfuEsx-4JOdQSF0
+1 > Connection: Keep-Alive
+1 > Content-Length: 122
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"first_name":"sub","middle_name":"tp","last_name":"acc","email":"sub@xyz.com","password":"subacc","phone_number":"12331"}
+
+16:51:02.154 [main] DEBUG com.intuit.karate - response time in milliseconds: 130.08
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Fri, 26 Jul 2019 07:51:02 GMT
+1 < Expires: 0
+1 < Location: http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/sub/2be6b373-c7d0-453b-86de-ceb01703fdf9
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=952263D3B2C361972985C91FF13EFCAC; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+16:51:02.209 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:51:02.228 [main] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/sub/428bc15e-c249-4f23-8ea8-04593a2e2796
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQxMjkwNTIsImlhdCI6MTU2NDEyNzI1Mn0.h2-rCy_k6SFpqJeaMqTQulnq1y6iOfuEsx-4JOdQSF0
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+16:51:02.268 [main] DEBUG com.intuit.karate - response time in milliseconds: 39.61
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 26 Jul 2019 07:51:02 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=4D161DD891D591F19EF854762A62B6AA; Path=/v1; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"third_party_id":"77455f66-ef6b-4d46-a3b6-17d6f3cce02f","sub_account_id":"428bc15e-c249-4f23-8ea8-04593a2e2796","first_name":"sub","middle_name":"tp","last_name":"acc","email":"sub@xyz.com","phone_number":"12331","last_updated_at":"2019-07-26T04:14:19.297Z"}
+

@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8ca4dd0b-1ac4-4a20-8d03-c49d2545cf8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/examples/dataSubject/dataSubject.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/examples/dataSubject/dataSubject.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/karate.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/karate.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -54,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/examples/thirdParty/thirdParty.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="8" />
+            <state relative-caret-position="485">
+              <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -455,19 +453,17 @@
       <option name="project" value="LOCAL" />
       <updated>1564108942204</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="corrected the documentation formatting">
+      <created>1564127532949</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1564127532949</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__admin - 2019.07.26 at 12h 35m 00s.xml">
-      <configuration name="Feature: admin" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__thirdParty_(1) - 2019.07.26 at 12h 44m 50s.xml">
-      <configuration name="Feature: thirdParty (1)" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__thirdParty_(1) - 2019.07.26 at 13h 13m 29s.xml">
-      <configuration name="Feature: thirdParty (1)" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Feature__thirdParty_(1) - 2019.07.26 at 13h 13m 57s.xml">
       <configuration name="Feature: thirdParty (1)" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
@@ -489,12 +485,21 @@
     <history-entry file="Feature__admin - 2019.07.26 at 16h 46m 09s.xml">
       <configuration name="Feature: admin" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
+    <history-entry file="Feature__thirdParty_(1) - 2019.07.26 at 16h 47m 32s.xml">
+      <configuration name="Feature: thirdParty (1)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__thirdParty_(1) - 2019.07.26 at 16h 50m 11s.xml">
+      <configuration name="Feature: thirdParty (1)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__thirdParty_(1) - 2019.07.26 at 16h 51m 02s.xml">
+      <configuration name="Feature: thirdParty (1)" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19062833" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19062833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -504,7 +509,7 @@
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32970297" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49946752" visible="true" weight="0.32871288" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49946752" visible="true" weight="0.32871288" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -556,7 +561,8 @@
     <MESSAGE value="removed the demo files and addes negative scenarios" />
     <MESSAGE value="updated feature file for using karate config file" />
     <MESSAGE value="updated the readme file with basic documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated the readme file with basic documentation" />
+    <MESSAGE value="corrected the documentation formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected the documentation formatting" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/target/test-classes/examples/products/products.feature">
@@ -713,8 +719,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/examples/thirdParty/thirdParty.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="8" />
+        <state relative-caret-position="485">
+          <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
         </state>
       </provider>
     </entry>
