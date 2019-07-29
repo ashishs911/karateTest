@@ -1,0 +1,28 @@
+14:15:58.215 karate.env system property was: null 
+14:15:58.348 request:
+1 > GET http://localhost:8080/v1/datasubject/accounts/60/processingrequests
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MCIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQzNzkxNTgsImlhdCI6MTU2NDM3NzM1OH0.bNIjYk8EgoTUS0_ueR6J1DrsVuBOnh2l9TK9kBLsLs0
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+14:15:58.408 response time in milliseconds: 58.74
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Mon, 29 Jul 2019 05:15:57 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=83481D64BA52BA72E2E4656E05F6C803; Path=/v1; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+[]
+
+{"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (58) already exist","debug_id":"6f60980e-0537-4da8-9d48-2b7d7ac1b16c"}
+
+tection: 1; mode=block
+{"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (58) already exist","debug_id":"72087034-577a-4e49-aaab-ff2afe457e39"}
+

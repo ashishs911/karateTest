@@ -1,0 +1,28 @@
+18:08:43.702 karate.env system property was: null 
+18:08:44.035 request:
+1 > POST http://localhost:8080/v1/datasubject/accounts
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 138
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"account_id":41,"first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","password":"abcdef"}
+
+18:08:44.141 response time in milliseconds: 103.96
+1 < 201
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Wed, 24 Jul 2019 09:08:44 GMT
+1 < Expires: 0
+1 < Location: http://localhost:8080/v1/datasubject/accounts/41
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=51E76B7168BA697B89354F6E050DE138; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+:"Object already exist","message":"The object DataSubjectAccount with the identifiers (23) already exist","debug_id":"f856e76e-f6e5-4c9b-a2bb-b2cba42a0280"}
+
+17:28:01.417 status code was: 422, expected: 201, response time: 58, url: http://localhost:8080/v1/datasubject/accounts, response: {"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (23) already exist","debug_id":"f856e76e-f6e5-4c9b-a2bb-b2cba42a0280"}
+-4563-bb49-795a12a5add3"}

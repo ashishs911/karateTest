@@ -1,0 +1,29 @@
+12:01:45.116 request:
+1 > POST http://localhost:8080/v1/admin/accounts/admin/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"admin"}
+
+12:01:45.212 response time in milliseconds: 95.69
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQzNzExMDUsImlhdCI6MTU2NDM2OTMwNX0.ROY0SBAaH5hrV8x3EtE4z1tUxPA25OwMghU5ETUSl6c
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Mon, 29 Jul 2019 03:01:44 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=89B5F06117045432B83FA849971B44B9; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+
+1:55:56.931 [print] authorization key is  [
+  "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsInJvbGUiOiJST0xFQURNSU4iLCJleHAiOjE1NjQzNzA3NTYsImlhdCI6MTU2NDM2ODk1Nn0.cRRiCjyeFZSOCiQCzeYVxaanwJJO7qpduC2KAP44yjo"
+]
+
+

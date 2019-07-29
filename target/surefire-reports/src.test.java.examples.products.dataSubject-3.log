@@ -1,0 +1,25 @@
+17:52:26.880 karate.env system property was: null 
+17:51:26.418 request:
+1 > GET http://localhost:8080/v1/datasubject/accounts/33
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+17:51:26.424 response time in milliseconds: 5.34
+1 < 401
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 152
+1 < Content-Type: application/json;charset=ISO-8859-1
+1 < Date: Wed, 24 Jul 2019 08:51:26 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=004FBC60C172DA5B5BCFF35851938806; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"No credentials provided","message":"Full authentication is required to access this resource","debug_id":"359decde-2398-44f1-8b05-6bd49c80c937"}
+
+17:51:26.424 status code was: 401, expected: 200, response time: 5, url: http://localhost:8080/v1/datasubject/accounts/33, response: {"name":"No credentials provided","message":"Full authentication is required to access this resource","debug_id":"359decde-2398-44f1-8b05-6bd49c80c937"}
+}
+9-4cc0-96aa-f2d3b3f9a592"}

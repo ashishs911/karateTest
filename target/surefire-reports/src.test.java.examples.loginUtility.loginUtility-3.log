@@ -1,0 +1,24 @@
+14:22:08.729 karate.env system property was: null 
+14:22:08.738 request:
+1 > POST http://localhost:8080/v1/datasubject/accounts/60/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 21
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"abcdef"}
+
+14:22:08.839 response time in milliseconds: 98.96
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MCIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQzNzk1MjgsImlhdCI6MTU2NDM3NzcyOH0.LAHVVW8dvCrRHPvMlSUZru4_bujZfZRxNrfPjvbCWCg
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Mon, 29 Jul 2019 05:22:08 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=01EBE0F26C72B4890F0E8D2D31CF1EB1; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+

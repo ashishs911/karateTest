@@ -1,0 +1,70 @@
+14:15:57.889 karate.env system property was: null 
+14:15:58.027 request:
+1 > DELETE http://localhost:8080/v1/datasubject/accounts/61
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MCIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQzNzkxNTgsImlhdCI6MTU2NDM3NzM1OH0.bNIjYk8EgoTUS0_ueR6J1DrsVuBOnh2l9TK9kBLsLs0
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+14:15:58.045 response time in milliseconds: 17.53
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Mon, 29 Jul 2019 05:15:57 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=14DC04BE561C1D5A79957AAC2552234C; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+
+X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"name":"Object not found","message":"The object DataSubjectAccount with the identifiers (61.0) does not exist","debug_id":"28841bcc-3d1a-4866-b960-57a1bb599c69"}
+
+14:14:46.979 status code was: 404, expected: 200, response time: 31, url: http://localhost:8080/v1/datasubject/accounts/61.0, response: {"name":"Object not found","message":"The object DataSubjectAccount with the identifiers (61.0) does not exist","debug_id":"28841bcc-3d1a-4866-b960-57a1bb599c69"}
+VQkpFQ1QiLCJleHAiOjE1NjQzNjY2MTYsImlhdCI6MTU2NDM2NDgxNn0.Y1LrBi1ObURTvLONFUTMQBeqRHXg4fMtTCNqFeDKGVo
+2 > Connection: Keep-Alive
+2 > Cookie: JSESSIONID=43C9FA16059E2B29CEE7DB3AEB6BFA3D
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+10:46:57.011 response time in milliseconds: 25.42
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Mon, 29 Jul 2019 01:46:56 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Set-Cookie: JSESSIONID=159B5E83EDC8FC7436F138DA0A8A170E; Path=/v1; HttpOnly
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"data_subject_id":"59","first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","identification_id":null,"registered_at":"2019-07-26T08:23:08.735Z","last_updated_at":null}
+
+10:46:57.018 request:
+3 > GET http://localhost:8080/v1/datasubject/accounts/59/processingrequests
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1OSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjQzNjY2MTYsImlhdCI6MTU2NDM2NDgxNn0.Y1LrBi1ObURTvLONFUTMQBeqRHXg4fMtTCNqFeDKGVo
+3 > Connection: Keep-Alive
+3 > Cookie: JSESSIONID=159B5E83EDC8FC7436F138DA0A8A170E
+3 > Host: localhost:8080
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+10:46:57.047 response time in milliseconds: 28.46
+3 < 200
+3 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 < Content-Type: application/json;charset=UTF-8
+3 < Date: Mon, 29 Jul 2019 01:46:56 GMT
+3 < Expires: 0
+3 < Pragma: no-cache
+3 < Transfer-Encoding: chunked
+3 < X-Content-Type-Options: nosniff
+3 < X-Frame-Options: DENY
+3 < X-XSS-Protection: 1; mode=block
+[]
+
+

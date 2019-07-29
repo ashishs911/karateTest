@@ -1,0 +1,24 @@
+12:22:19.315 request:
+1 > POST http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 20
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"third"}
+
+12:22:19.401 response time in milliseconds: 86.00
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQzNzIzMzksImlhdCI6MTU2NDM3MDUzOX0.7sxrGvmPjtIyXIHUJydu5vOOIHNVQBCHnj69wFU9_GM
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Mon, 29 Jul 2019 03:22:19 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=6ED525CC88A12B57A778F2B72038F859; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+

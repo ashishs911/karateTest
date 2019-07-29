@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: examples.dataSubject.DataSubjectRunner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.953 s <<< FAILURE! - in examples.dataSubject.DataSubjectRunner
+testUsers[1][1]  Time elapsed: 0.68 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: dataSubject.feature:11 - status code was: 422, expected: 201, response time: 79, url: http://13.78.33.186:8080/v1/datasubject/accounts, response: {"name":"Object already exist","message":"The object DataSubjectAccount with the identifiers (57) already exist","debug_id":"607a7712-ece9-493e-a1d1-d6ca043a9a4a"}
+

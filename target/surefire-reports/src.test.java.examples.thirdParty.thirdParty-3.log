@@ -1,0 +1,23 @@
+16:51:02.216 karate.env system property was: null 
+16:51:02.228 request:
+1 > GET http://localhost:8080/v1/thirdparty/accounts/77455f66-ef6b-4d46-a3b6-17d6f3cce02f/sub/428bc15e-c249-4f23-8ea8-04593a2e2796
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NzQ1NWY2Ni1lZjZiLTRkNDYtYTNiNi0xN2Q2ZjNjY2UwMmYiLCJyb2xlIjoiUk9MRVRISVJEUEFSVFkiLCJleHAiOjE1NjQxMjkwNTIsImlhdCI6MTU2NDEyNzI1Mn0.h2-rCy_k6SFpqJeaMqTQulnq1y6iOfuEsx-4JOdQSF0
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+16:51:02.269 response time in milliseconds: 39.61
+1 < 200
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 26 Jul 2019 07:51:02 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=4D161DD891D591F19EF854762A62B6AA; Path=/v1; HttpOnly
+1 < Transfer-Encoding: chunked
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+{"third_party_id":"77455f66-ef6b-4d46-a3b6-17d6f3cce02f","sub_account_id":"428bc15e-c249-4f23-8ea8-04593a2e2796","first_name":"sub","middle_name":"tp","last_name":"acc","email":"sub@xyz.com","phone_number":"12331","last_updated_at":"2019-07-26T04:14:19.297Z"}
+

@@ -1,0 +1,54 @@
+18:08:44.160 karate.env system property was: null 
+18:08:44.164 request:
+1 > POST http://localhost:8080/v1/datasubject/accounts/41/jwt/token
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 21
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+{"password":"abcdef"}
+
+18:08:44.248 response time in milliseconds: 82.92
+1 < 200
+1 < Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjM5NjExMjQsImlhdCI6MTU2Mzk1OTMyNH0.7p0j2vYUvK6vT6vAPywJn974GIAkouATIMXPVt0Phko
+1 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 < Content-Length: 0
+1 < Date: Wed, 24 Jul 2019 09:08:44 GMT
+1 < Expires: 0
+1 < Pragma: no-cache
+1 < Set-Cookie: JSESSIONID=9C6A25E4302056F69B7C8C4A0A21D48E; Path=/v1; HttpOnly
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: DENY
+1 < X-XSS-Protection: 1; mode=block
+
+18:08:44.272 [print] authorization key is  [
+  "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjM5NjExMjQsImlhdCI6MTU2Mzk1OTMyNH0.7p0j2vYUvK6vT6vAPywJn974GIAkouATIMXPVt0Phko"
+]
+
+18:08:44.292 request:
+2 > GET http://localhost:8080/v1/datasubject/accounts/41
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MSIsInJvbGUiOiJST0xFREFUQVNVQkpFQ1QiLCJleHAiOjE1NjM5NjExMjQsImlhdCI6MTU2Mzk1OTMyNH0.7p0j2vYUvK6vT6vAPywJn974GIAkouATIMXPVt0Phko
+2 > Connection: Keep-Alive
+2 > Cookie: JSESSIONID=9C6A25E4302056F69B7C8C4A0A21D48E
+2 > Host: localhost:8080
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_212)
+
+18:08:44.359 response time in milliseconds: 65.88
+2 < 200
+2 < Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 < Content-Type: application/json;charset=UTF-8
+2 < Date: Wed, 24 Jul 2019 09:08:44 GMT
+2 < Expires: 0
+2 < Pragma: no-cache
+2 < Set-Cookie: JSESSIONID=737892F278335E9672FE059F5C455C96; Path=/v1; HttpOnly
+2 < Transfer-Encoding: chunked
+2 < X-Content-Type-Options: nosniff
+2 < X-Frame-Options: DENY
+2 < X-XSS-Protection: 1; mode=block
+{"data_subject_id":"41","first_name":"mfn","middle_name":"doe","last_name":"jr","email":"aed@xyz.com","phone_number":"12331","identification_id":null,"registered_at":"2019-07-24T09:08:44.127Z","last_updated_at":null}
+
+18:08:05.201 assertion failed: path: $, actual: {data_subject_id=40, first_name=mfn, middle_name=doe, last_name=jr, email=aed@xyz.com, phone_number=12331, identification_id=null, registered_at=2019-07-24T09:08:05.010Z, last_updated_at=null}, expected: {account_id=40, first_name=mfn, middle_name=doe, last_name=jr, email=aed@xyz.com, phone_number=12331}, reason: all key-values did not match, expected has un-matched keys: [account_id]
+hed keys: [account_id, password]
+, registered_at=2019-07-24T09:02:36.971Z, last_updated_at=null}
