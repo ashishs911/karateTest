@@ -3,6 +3,7 @@ Feature: Test scripts based on DataSubject account Activities in Information ban
   Background:
     * url baseUrl
     * def acc_id = dataSubjectId
+    * def procRequest = procRequestId
     * def dataSubjectLogin = call read('classpath:examples/loginUtility/loginUtility.feature@name=DataSubject')
     * def authToken = { Authorization : #(dataSubjectLogin.responseHeaders['Authorization'])}
 
@@ -30,6 +31,13 @@ Feature: Test scripts based on DataSubject account Activities in Information ban
       And headers authToken
       When method GET
       Then status 200
+
+  Scenario: updating the status of thirdParty Request
+    Given path 'datasubject/accounts', acc_id,'/processingrequests/', procRequest
+    And headers authToken
+    And request [{"status" : "NOT_DECIDED"}]
+    When method PUT
+    Then status 200
 
   #Negative Scenarios
 

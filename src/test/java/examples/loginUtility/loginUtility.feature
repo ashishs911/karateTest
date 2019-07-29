@@ -4,6 +4,7 @@ Feature: Test scripts based on Admin Activities in Information bank.
     * url baseUrl
     * def thirdParty = thirdPartyId
     * def acc_id = dataSubjectId
+    * def subAccount = subAccountId
 
 
   @name=Admin
@@ -24,5 +25,12 @@ Feature: Test scripts based on Admin Activities in Information bank.
   Scenario: logging into data subject account,
     Given path 'datasubject/accounts', acc_id,'/jwt/token'
     And request {"password": "abcdef"}
+    When method POST
+    Then status 200
+
+  @name=SubAccount
+  Scenario: Logging into Thirdparty sub-account
+    Given path '/thirdparty/accounts/', thirdParty,'/sub/',subAccount,'/jwt/token/'
+    And request {"password": "subacc"}
     When method POST
     Then status 200
